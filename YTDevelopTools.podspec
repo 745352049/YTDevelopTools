@@ -9,13 +9,14 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.license      = "MIT"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
 
   spec.source       = { :git => "https://github.com/745352049/YTDevelopTools.git", :tag => "#{spec.version}" }
-  spec.source_files = "YTDevelopTools.h"
+  spec.source_files = 'Classes/*.{h,m}'
+  spec.public_header_files = 'Classes/*.h'
   spec.requires_arc = true
   spec.platform     = :ios, "8.0"
   spec.frameworks   = "UIKit", "Foundation"
