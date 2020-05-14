@@ -28,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A4B9576246D1AAA002FBE60 /* YTDevelopHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDevelopHeader.h; sourceTree = "<group>"; };
 		7AA45B52246D061A002D9801 /* libYTDevelopTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYTDevelopTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA45B55246D061A002D9801 /* YTDevelopTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDevelopTools.h; sourceTree = "<group>"; };
 		7AA45B56246D061A002D9801 /* YTDevelopTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDevelopTools.m; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		7AA45B54246D061A002D9801 /* YTDevelopTools */ = {
 			isa = PBXGroup;
 			children = (
+				7A4B9576246D1AAA002FBE60 /* YTDevelopHeader.h */,
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
 				7AA45B56246D061A002D9801 /* YTDevelopTools.m */,
 				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
@@ -253,6 +255,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopHeader.h\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -265,6 +268,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopHeader.h\"";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
