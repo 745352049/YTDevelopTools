@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.license      = "MIT"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"

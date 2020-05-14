@@ -28,7 +28,7 @@ typedef void(^YTAlertClickBlock)(NSInteger index);
  调法式例：
  1.注意按钮标题和按钮风格的数组一一对应
  2.设置UIAlertActionStyleCancel的时候注意放在第一位
- [YTSystemAlert alertControllerWithTitle:@"提示" Message:@"注意按钮标题和按钮风格的数组一一对应" PreferredStyle:UIAlertControllerStyleAlert ActionTitles:@[@"取消", @"确定"] ActionStyles:@[@"1", @"2"] Controller:self AlertBlock:^(NSInteger index) {
+ [YTSystemAlertController alertWithTitle:@"提示" Message:@"注意按钮标题和按钮风格的数组一一对应" PreferredStyle:UIAlertControllerStyleAlert ActionTitles:@[@"取消", @"确定"] ActionStyles:@[@"1", @"2"] Controller:self AlertBlock:^(NSInteger index) {
      NSLog(@"点击了 --- %ld", (long)index);
  }];
 
