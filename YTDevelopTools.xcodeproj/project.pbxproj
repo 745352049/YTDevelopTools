@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */; };
 		7AA45B58246D061A002D9801 /* YTDevelopTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B55246D061A002D9801 /* YTDevelopTools.h */; };
 		7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */; };
 		7AA45B7A246D0E9E002D9801 /* YTSystemAlertController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTWaterMark.h"; sourceTree = "<group>"; };
+		7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTWaterMark.m"; sourceTree = "<group>"; };
 		7AA45B52246D061A002D9801 /* libYTDevelopTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYTDevelopTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA45B55246D061A002D9801 /* YTDevelopTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDevelopTools.h; sourceTree = "<group>"; };
 		7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSystemAlertController.h; sourceTree = "<group>"; };
@@ -44,13 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A4B95FD246E34AB002FBE60 /* Classes */ = {
+		7A4B95FD246E34AB002FBE60 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */,
+				7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */,
 				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
 				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
 			);
-			path = Classes;
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		7AA45B49246D061A002D9801 = {
@@ -73,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
-				7A4B95FD246E34AB002FBE60 /* Classes */,
+				7A4B95FD246E34AB002FBE60 /* Tools */,
 			);
 			path = YTDevelopTools;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
+				7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
