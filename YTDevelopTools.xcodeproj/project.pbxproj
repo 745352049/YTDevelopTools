@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AA45B57246D061A002D9801 /* YTDevelopTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA45B56246D061A002D9801 /* YTDevelopTools.m */; };
 		7AA45B58246D061A002D9801 /* YTDevelopTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B55246D061A002D9801 /* YTDevelopTools.h */; };
 		7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */; };
 		7AA45B7A246D0E9E002D9801 /* YTSystemAlertController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */; };
@@ -28,10 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7A4B9576246D1AAA002FBE60 /* YTDevelopHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDevelopHeader.h; sourceTree = "<group>"; };
 		7AA45B52246D061A002D9801 /* libYTDevelopTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYTDevelopTools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA45B55246D061A002D9801 /* YTDevelopTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDevelopTools.h; sourceTree = "<group>"; };
-		7AA45B56246D061A002D9801 /* YTDevelopTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTDevelopTools.m; sourceTree = "<group>"; };
 		7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTSystemAlertController.h; sourceTree = "<group>"; };
 		7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSystemAlertController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A4B95FD246E34AB002FBE60 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
+				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7AA45B49246D061A002D9801 = {
 			isa = PBXGroup;
 			children = (
@@ -66,11 +72,8 @@
 		7AA45B54246D061A002D9801 /* YTDevelopTools */ = {
 			isa = PBXGroup;
 			children = (
-				7A4B9576246D1AAA002FBE60 /* YTDevelopHeader.h */,
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
-				7AA45B56246D061A002D9801 /* YTDevelopTools.m */,
-				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
-				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+				7A4B95FD246E34AB002FBE60 /* Classes */,
 			);
 			path = YTDevelopTools;
 			sourceTree = "<group>";
@@ -133,7 +136,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
-				7AA45B57246D061A002D9801 /* YTDevelopTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +257,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopHeader.h\"";
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -268,7 +270,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopHeader.h\"";
+				HEADER_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
