@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
   spec.platform     = :ios, "8.0"
-  # spec.ios.deployment_target = '8.0'
+  spec.ios.deployment_target = '8.0'
   # spec.tvos.deployment_target = '9.0'
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
@@ -29,7 +29,7 @@ Pod::Spec.new do |spec|
   # Categories
   spec.subspec 'Categories' do |categories|
 
-  categories.source_files = 'YTDevelopTools/Categories/**/*.{h,m}'
+  categories.source_files = 'YTDevelopTools/Categories/*.{h,m}'
   categories.frameworks   = "Foundation"
 
   end
@@ -37,8 +37,15 @@ Pod::Spec.new do |spec|
   # Tools
   spec.subspec 'Tools' do |tools|
 
-  tools.source_files = 'YTDevelopTools/Tools/**/*.{h,m}'
-  tools.frameworks   = "UIKit", "Foundation", "Photos", "AssetsLibrary", "MediaPlayer", "Contacts", "EventKit"
+  tools.source_files = 'YTDevelopTools/Tools/*.{h,m}'
+  tools.frameworks   = "UIKit", "Foundation", "Photos", "MediaPlayer", "Contacts", "EventKit"
+
+  end
+
+  # Resources
+  spec.subspec 'Resources' do |resources|
+
+  resources.resources = 'YTDevelopTools/Resources/*.{png,bundle}'
 
   end
 

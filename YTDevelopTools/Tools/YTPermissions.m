@@ -58,9 +58,9 @@
 }
 
 + (void)photoLibraryPermissionWithResultBlock:(resultBlock)resultBlock {
-    ALAuthorizationStatus authStatus = [ALAssetsLibrary authorizationStatus];
+    PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
-        if (authStatus == AVAuthorizationStatusNotDetermined) {
+        if (authStatus == PHAuthorizationStatusNotDetermined) {
             [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
                 if (status == PHAuthorizationStatusNotDetermined) {
                     dispatch_async(dispatch_get_main_queue(), ^{
@@ -79,7 +79,7 @@
                     });
                 }
             }];
-        } else if (authStatus == ALAuthorizationStatusRestricted || authStatus == ALAuthorizationStatusDenied) {
+        } else if (authStatus == PHAuthorizationStatusRestricted || authStatus == PHAuthorizationStatusDenied) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSLog(@"********** 图片库权限限制或手动关闭授权 **********");
                 resultBlock(NO, @"无图片库权限");
@@ -99,7 +99,7 @@
 }
 
 + (void)photoAlbumPermissionWithResultBlock:(resultBlock)resultBlock {
-    ALAuthorizationStatus authStatus = [ALAssetsLibrary authorizationStatus];
+    PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
         if (authStatus == AVAuthorizationStatusNotDetermined) {
             [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
@@ -120,7 +120,7 @@
                     });
                 }
             }];
-        } else if (authStatus == ALAuthorizationStatusRestricted || authStatus == ALAuthorizationStatusDenied) {
+        } else if (authStatus == PHAuthorizationStatusRestricted || authStatus == PHAuthorizationStatusDenied) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 NSLog(@"********** 相册权限限制或手动关闭授权 **********");
                 resultBlock(NO, @"无相册权限");
