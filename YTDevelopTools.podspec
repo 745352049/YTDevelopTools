@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.6"
+  spec.version      = "1.0.7"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -18,11 +18,27 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.source       = { :git => "https://github.com/745352049/YTDevelopTools.git", :tag => "#{spec.version}" }
 
-  spec.source_files = "YTDevelopTools", "YTDevelopTools/*.{h,m}", "YTDevelopTools/**/*.{h,m}"
+  spec.public_header_files = 'YTDevelopTools/YTDevelopTools.h'
+  spec.source_files = 'YTDevelopTools/YTDevelopTools.h'
 
   spec.requires_arc = true
   spec.ios.deployment_target = '8.0'
-  spec.tvos.deployment_target = '9.0'
-  spec.frameworks   = "UIKit", "Foundation"
+  # spec.tvos.deployment_target = '9.0'
+
+  # Categories
+  spec.subspec 'Categories' do |categories|
+
+  categories.source_files = 'YTDevelopTools/Categories/**/*.{h,m}'
+  categories.frameworks   = "Foundation"
+
+  end
+
+  # Tools
+  spec.subspec 'Tools' do |tools|
+
+  tools.source_files = 'YTDevelopTools/Tools/**/*.{h,m}'
+  tools.frameworks   = "UIKit", "Foundation", "Photos", "AssetsLibrary", "MediaPlayer", "Contacts", "EventKit"
+
+  end
 
 end
