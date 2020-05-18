@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.9"
+  spec.version      = "1.0.10"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.public_header_files = 'YTDevelopTools/YTDevelopTools.h'
   spec.source_files = 'YTDevelopTools/YTDevelopTools.h'
+  spec.resources    = 'YTDevelopTools/*.{png,bundle}'
 
   spec.requires_arc = true
   spec.platform     = :ios, "8.0"
@@ -39,13 +40,6 @@ Pod::Spec.new do |spec|
 
   tools.source_files = 'YTDevelopTools/Tools/*.{h,m}'
   tools.frameworks   = "UIKit", "Foundation", "Photos", "MediaPlayer", "Contacts", "EventKit"
-
-  end
-
-  # Resources
-  spec.subspec 'Resources' do |resources|
-
-  resources.resources = 'YTDevelopTools/Resources/*.{png,bundle}'
 
   end
 

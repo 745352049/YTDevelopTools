@@ -86,14 +86,6 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		7A67FA572472D2EA001CD16E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		7AA45B49246D061A002D9801 = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
+				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
 				7A5945D82472373300E3EAC3 /* Categories */,
 				7A4B95FD246E34AB002FBE60 /* Tools */,
-				7A67FA572472D2EA001CD16E /* Resources */,
 			);
 			path = YTDevelopTools;
 			sourceTree = "<group>";
