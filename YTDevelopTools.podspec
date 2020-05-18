@@ -9,12 +9,10 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.7"
+  spec.version      = "1.0.8"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
-  spec.platform     = :ios, "8.0"
-
   spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.source       = { :git => "https://github.com/745352049/YTDevelopTools.git", :tag => "#{spec.version}" }
 
@@ -22,8 +20,11 @@ Pod::Spec.new do |spec|
   spec.source_files = 'YTDevelopTools/YTDevelopTools.h'
 
   spec.requires_arc = true
-  spec.ios.deployment_target = '8.0'
+  spec.platform     = :ios, "8.0"
+  # spec.ios.deployment_target = '8.0'
   # spec.tvos.deployment_target = '9.0'
+  # spec.osx.deployment_target = "10.7"
+  # spec.watchos.deployment_target = "2.0"
 
   # Categories
   spec.subspec 'Categories' do |categories|

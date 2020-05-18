@@ -7,7 +7,7 @@
 // 相机
 #import <Photos/Photos.h>
 // 相册
-#import <AssetsLibrary/ALAssetsLibrary.h>
+#import <AssetsLibrary/AssetsLibrary.h>
 // 媒体库
 #import <MediaPlayer/MediaPlayer.h>
 // 通讯录
