@@ -1,5 +1,5 @@
 //
-//  YTSafeKeyBoardView.h
+//  YTKeyBoardView.h
 // 
 
 #import <UIKit/UIKit.h>
@@ -10,11 +10,13 @@ typedef NS_ENUM(NSUInteger, YTKeyBoardHandleType) {
     YTKeyBoardHandleType_Point       // 点键
 };
 
+#define YTKeyBoardChangeNotification @"YTKeyBoardChangeNotification"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YTSafeKeyBoardView : UIView
+@interface YTKeyBoardView : UIView
 
-- (instancetype)initWithShowPonit:(BOOL)show;
+@property (nonatomic, assign) BOOL isShowPoint;
 
 @property (nonatomic, copy) void(^keyBoardClickBlock)(NSString * _Nullable value, YTKeyBoardHandleType type);
 

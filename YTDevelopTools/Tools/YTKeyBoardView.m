@@ -1,15 +1,15 @@
 //
-//  YTSafeKeyBoardView.m
+//  YTKeyBoardView.m
 //
 
-#import "YTSafeKeyBoardView.h"
+#import "YTKeyBoardView.h"
 
 #define YTKeyBoard_SafeAreaHeight() \
 ^(){\
 if (@available(iOS 13.0, *)) {\
-return [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;\
+return [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height > 20 ? 34.0 : 0.0;\
 } else {\
-return [[UIApplication sharedApplication] statusBarFrame].size.height;\
+return [[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 34.0 : 0.0;\
 }\
 }()
 
@@ -18,51 +18,78 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 #define YTKeyBoardItem_Width YTKeyBoardWidth/3.0
 #define YTKeyBoardItem_Height 55.0
 
-@interface YTSafeKeyBoardView ()
-
-@property (nonatomic, assign) BOOL isShowPoint;
+@interface YTKeyBoardView ()
 
 @end
 
-@implementation YTSafeKeyBoardView
+@implementation YTKeyBoardView
 
-- (instancetype)initWithShowPonit:(BOOL)show {
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height-YTKeyBoardHeight, YTKeyBoardWidth, YTKeyBoardHeight);
         self.userInteractionEnabled = YES;
         self.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:246.0/255.0 blue:246.0/255.0 alpha:1.0];
 
-        self.isShowPoint = show;
-
-        [self createKeyBoardUI];
+        [self createKeyBoardUIWithPoint:NO];
     }
     return self;
 }
 
 - (void)setIsShowPoint:(BOOL)isShowPoint {
     _isShowPoint = isShowPoint;
+
+    [self isShowPointWithPointButton:[self viewWithTag:809] Show:isShowPoint];
+    [self isShowPointWithDeleteButton:[self viewWithTag:811] Show:isShowPoint];
+}
+
+- (void)isShowPointWithPointButton:(UIButton *)button Show:(BOOL)show {
+    if (show == YES) {
+        [button setTitle:@"·" forState:UIControlStateNormal];
+        [button.titleLabel setFont:[UIFont systemFontOfSize:26]];
+        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor whiteColor]];
+        [button addTarget:self action:@selector(pointClickAction) forControlEvents:UIControlEventTouchUpInside];
+    } else {
+        [button setTitle:@"" forState:UIControlStateNormal];
+        [button setBackgroundColor:[UIColor clearColor]];
+        [button removeTarget:self action:@selector(pointClickAction) forControlEvents:UIControlEventTouchUpInside];
+    }
+}
+
+- (void)isShowPointWithDeleteButton:(UIButton *)button Show:(BOOL)show {
+    if (show == YES) {
+        [button setBackgroundColor:[UIColor whiteColor]];
+    } else {
+        [button setBackgroundColor:[UIColor clearColor]];
+    }
 }
 
 - (void)keyValueClickAction:(UIButton *)sender {
+    // 发送一个通知，获取当前的光标位置
+    [[NSNotificationCenter defaultCenter] postNotificationName:YTKeyBoardChangeNotification object:nil];
     if (_keyBoardClickBlock) {
         _keyBoardClickBlock(sender.titleLabel.text, YTKeyBoardHandleType_Number);
     }
 }
 
 - (void)pointClickAction {
+    // 发送一个通知，获取当前的光标位置
+    [[NSNotificationCenter defaultCenter] postNotificationName:YTKeyBoardChangeNotification object:nil];
     if (_keyBoardClickBlock) {
-        _keyBoardClickBlock(nil, YTKeyBoardHandleType_Point);
+        _keyBoardClickBlock(@".", YTKeyBoardHandleType_Point);
     }
 }
 
 - (void)deleteClickAction {
+    // 发送一个通知，获取当前的光标位置
+    [[NSNotificationCenter defaultCenter] postNotificationName:YTKeyBoardChangeNotification object:nil];
     if (_keyBoardClickBlock) {
         _keyBoardClickBlock(nil, YTKeyBoardHandleType_Delete);
     }
 }
 
-- (void)createKeyBoardUI {
+- (void)createKeyBoardUIWithPoint:(BOOL)show {
     NSArray *array = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"·",@"0",@""];
 
     float kx;
@@ -81,24 +108,14 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
         keyButton.enabled = YES;
 
         if (i == 9) {
-            if (self.isShowPoint == YES) {
-                [keyButton setTitle:[array objectAtIndex:i] forState:UIControlStateNormal];
-                [keyButton.titleLabel setFont:[UIFont systemFontOfSize:26]];
-                [keyButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                [keyButton setBackgroundColor:[UIColor whiteColor]];
-                [keyButton addTarget:self action:@selector(pointClickAction) forControlEvents:UIControlEventTouchUpInside];
-            } else {
-                [keyButton setBackgroundColor:[UIColor clearColor]];
-            }
+            [self isShowPointWithPointButton:keyButton Show:show];
 
             [self addSubview:keyButton];
             continue;
         }
 
         if (i == 11) {
-            if (self.isShowPoint == YES) {
-                [keyButton setBackgroundColor:[UIColor whiteColor]];
-            }
+            [self isShowPointWithDeleteButton:keyButton Show:show];
             [keyButton setImage:[UIImage imageNamed:[[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"YTSafeKeyBoard_D@2x" ofType:@"png"]] forState:UIControlStateNormal];
             [keyButton addTarget:self action:@selector(deleteClickAction) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:keyButton];
