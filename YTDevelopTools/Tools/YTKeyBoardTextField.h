@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) NSInteger inputCount;
 
-@property (nonatomic, weak) id <YTKeyBoardTextFieldDelegate> keyBoardDelegate;
+@property (nonatomic,   weak) id <YTKeyBoardTextFieldDelegate> keyBoardDelegate;
 
 - (void)cleanValue;
 

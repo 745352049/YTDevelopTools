@@ -116,7 +116,7 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 34.
 
         if (i == 11) {
             [self isShowPointWithDeleteButton:keyButton Show:show];
-            [keyButton setImage:[UIImage imageNamed:[[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"YTSafeKeyBoard_D@2x" ofType:@"png"]] forState:UIControlStateNormal];
+            [keyButton setImage:[UIImage imageNamed:[[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"YTKeyBoard_D@2x" ofType:@"png"]] forState:UIControlStateNormal];
             [keyButton addTarget:self action:@selector(deleteClickAction) forControlEvents:UIControlEventTouchUpInside];
             [self addSubview:keyButton];
             continue;

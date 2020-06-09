@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) BOOL isShowPoint;
 
-@property (nonatomic, copy) void(^keyBoardClickBlock)(NSString * _Nullable value, YTKeyBoardHandleType type);
+@property (nonatomic,   copy) void(^keyBoardClickBlock)(NSString * _Nullable value, YTKeyBoardHandleType type);
 
 @end
 
