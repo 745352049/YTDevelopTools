@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.0.13"
+  spec.version      = "1.1.0"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -27,19 +27,27 @@ Pod::Spec.new do |spec|
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
 
-  # Categories
-  spec.subspec 'Categories' do |categories|
+  # Category
+  spec.subspec 'Category' do |category|
 
-  categories.source_files = 'YTDevelopTools/Categories/*.{h,m}'
-  categories.frameworks   = "Foundation"
+  category.source_files = 'YTDevelopTools/Category/*.{h,m}'
+  category.frameworks   = "Foundation", "UIKit"
 
   end
 
-  # Tools
-  spec.subspec 'Tools' do |tools|
+  # Util
+  spec.subspec 'Util' do |util|
 
-  tools.source_files = 'YTDevelopTools/Tools/*.{h,m}'
-  tools.frameworks   = "UIKit", "Foundation", "Photos", "MediaPlayer", "Contacts", "EventKit"
+  util.source_files = 'YTDevelopTools/Util/**/*.{h,m}'
+  util.frameworks   = "UIKit"
+
+  end
+  
+  # UIDesign
+  spec.subspec 'UIDesign' do |design|
+
+  design.source_files = 'YTDevelopTools/UIDesign/*.{h,m}'
+  design.frameworks   = "UIKit"
 
   end
 

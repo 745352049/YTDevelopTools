@@ -19,6 +19,10 @@
 		7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */; };
 		D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D538528124A1A6870058827F /* UIColor+YTAdapter.m */; };
 		D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538528524A1A7590058827F /* YTAssistiveTouchView.m */; };
+		D53852AE24A1B36A0058827F /* YTPermissionMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */; };
+		D53852B124A1B5AA0058827F /* YTPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */; };
+		D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B324A1B6830058827F /* YTPermissionContacts.m */; };
+		D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B624A1BF620058827F /* YTPermissionEventKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +63,14 @@
 		D538528224A1A6870058827F /* UIColor+YTAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YTAdapter.h"; sourceTree = "<group>"; };
 		D538528424A1A7590058827F /* YTAssistiveTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAssistiveTouchView.h; sourceTree = "<group>"; };
 		D538528524A1A7590058827F /* YTAssistiveTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAssistiveTouchView.m; sourceTree = "<group>"; };
+		D53852AC24A1B36A0058827F /* YTPermissionMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionMediaPlayer.h; sourceTree = "<group>"; };
+		D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionMediaPlayer.m; sourceTree = "<group>"; };
+		D53852AF24A1B5AA0058827F /* YTPermissionPhotos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionPhotos.h; sourceTree = "<group>"; };
+		D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionPhotos.m; sourceTree = "<group>"; };
+		D53852B224A1B6830058827F /* YTPermissionContacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionContacts.h; sourceTree = "<group>"; };
+		D53852B324A1B6830058827F /* YTPermissionContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionContacts.m; sourceTree = "<group>"; };
+		D53852B524A1BF620058827F /* YTPermissionEventKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionEventKit.h; sourceTree = "<group>"; };
+		D53852B624A1BF620058827F /* YTPermissionEventKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionEventKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,26 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7A4B95FD246E34AB002FBE60 /* Tools */ = {
+		7A4B95FD246E34AB002FBE60 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				D538528424A1A7590058827F /* YTAssistiveTouchView.h */,
-				D538528524A1A7590058827F /* YTAssistiveTouchView.m */,
-				7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */,
-				7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */,
-				7A839C522473F86000AC49ED /* YTKeyBoardTextField.h */,
-				7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */,
-				7A839C512473F86000AC49ED /* YTKeyBoardView.h */,
-				7A839C532473F86000AC49ED /* YTKeyBoardView.m */,
-				7A5945D92472386A00E3EAC3 /* YTPermissions.h */,
-				7A5945DA2472386A00E3EAC3 /* YTPermissions.m */,
-				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
-				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+				D53852B924A1C36B0058827F /* YTPermissions */,
 			);
-			path = Tools;
+			path = Util;
 			sourceTree = "<group>";
 		};
-		7A5945D82472373300E3EAC3 /* Categories */ = {
+		7A5945D82472373300E3EAC3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				D538528224A1A6870058827F /* UIColor+YTAdapter.h */,
@@ -103,7 +104,7 @@
 				7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */,
 				7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */,
 			);
-			path = Categories;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		7AA45B49246D061A002D9801 = {
@@ -127,10 +128,45 @@
 			children = (
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
 				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
-				7A5945D82472373300E3EAC3 /* Categories */,
-				7A4B95FD246E34AB002FBE60 /* Tools */,
+				7A5945D82472373300E3EAC3 /* Category */,
+				7A4B95FD246E34AB002FBE60 /* Util */,
+				D53852B824A1C1280058827F /* UIDesign */,
 			);
 			path = YTDevelopTools;
+			sourceTree = "<group>";
+		};
+		D53852B824A1C1280058827F /* UIDesign */ = {
+			isa = PBXGroup;
+			children = (
+				D538528424A1A7590058827F /* YTAssistiveTouchView.h */,
+				D538528524A1A7590058827F /* YTAssistiveTouchView.m */,
+				7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */,
+				7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */,
+				7A839C522473F86000AC49ED /* YTKeyBoardTextField.h */,
+				7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */,
+				7A839C512473F86000AC49ED /* YTKeyBoardView.h */,
+				7A839C532473F86000AC49ED /* YTKeyBoardView.m */,
+				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
+				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+			);
+			path = UIDesign;
+			sourceTree = "<group>";
+		};
+		D53852B924A1C36B0058827F /* YTPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				7A5945D92472386A00E3EAC3 /* YTPermissions.h */,
+				7A5945DA2472386A00E3EAC3 /* YTPermissions.m */,
+				D53852AF24A1B5AA0058827F /* YTPermissionPhotos.h */,
+				D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */,
+				D53852AC24A1B36A0058827F /* YTPermissionMediaPlayer.h */,
+				D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */,
+				D53852B224A1B6830058827F /* YTPermissionContacts.h */,
+				D53852B324A1B6830058827F /* YTPermissionContacts.m */,
+				D53852B524A1BF620058827F /* YTPermissionEventKit.h */,
+				D53852B624A1BF620058827F /* YTPermissionEventKit.m */,
+			);
+			path = YTPermissions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "北京军地联合网络技术中心西安研发中心";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					7AA45B51246D061A002D9801 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -190,13 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */,
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
 				7A5945DB2472386A00E3EAC3 /* YTPermissions.m in Sources */,
+				D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */,
+				D53852B124A1B5AA0058827F /* YTPermissionPhotos.m in Sources */,
 				7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
 				7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */,
 				D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */,
 				7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */,
+				D53852AE24A1B36A0058827F /* YTPermissionMediaPlayer.m in Sources */,
 				7A839C552473F86000AC49ED /* YTKeyBoardView.m in Sources */,
 				7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */,
 				7A839C542473F86000AC49ED /* YTKeyBoardTextField.m in Sources */,
