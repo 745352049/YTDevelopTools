@@ -1,6 +1,11 @@
 //
 //  YTDevelopTools.h
-//  
+//
+
+/**
+ 权限类可能影响APP上架
+ QQ:1538017568
+ */
 
 #import <Foundation/Foundation.h>
 
@@ -12,23 +17,27 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import <YTDevelopTools/UIImage+YTWaterMark.h>
 #import <YTDevelopTools/NSString+YTMD5Encrypt.h>
 #import <YTDevelopTools/NSBundle+YTBundle.h>
+#import <YTDevelopTools/UIColor+YTAdapter.h>
 
 #import <YTDevelopTools/YTSystemAlertController.h>
 #import <YTDevelopTools/YTPermissions.h>
 #import <YTDevelopTools/YTKeyBoardView.h>
 #import <YTDevelopTools/YTKeyBoardTextField.h>
 #import <YTDevelopTools/YTPlaceholderTextView.h>
+#import <YTDevelopTools/YTAssistiveTouchView.h>
 
 #else
 
 #import "UIImage+YTWaterMark.h"
 #import "NSString+YTMD5Encrypt.h"
 #import "NSBundle+YTBundle.h"
+#import "UIColor+YTAdapter.h"
 
 #import "YTSystemAlertController.h"
 #import "YTPermissions.h"
 #import "YTKeyBoardView.h"
 #import "YTKeyBoardTextField.h"
 #import "YTPlaceholderTextView.h"
+#import "YTAssistiveTouchView.h"
 
 #endif

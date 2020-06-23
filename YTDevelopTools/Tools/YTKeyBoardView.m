@@ -7,9 +7,9 @@
 #define YTKeyBoard_SafeAreaHeight() \
 ^(){\
 if (@available(iOS 13.0, *)) {\
-return [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height > 20 ? 34.0 : 0.0;\
+return [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;\
 } else {\
-return [[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 34.0 : 0.0;\
+return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 }\
 }()
 
