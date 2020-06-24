@@ -4,7 +4,7 @@
 
 #import "YTKeyBoardView.h"
 
-#define YTKeyBoard_SafeAreaHeight() \
+#define YTKeyBoard_StatusbarHeight() \
 ^(){\
 if (@available(iOS 13.0, *)) {\
 return [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager.statusBarFrame.size.height;\
@@ -13,8 +13,10 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 }\
 }()
 
+#define YTKeyBoard_Statusbar_Height YTKeyBoard_StatusbarHeight()
+#define YTKeyBoard_SafeArea_Height (YTKeyBoard_Statusbar_Height > 20.0 ? 34.0 : 0.0)
 #define YTKeyBoardWidth [UIScreen mainScreen].bounds.size.width
-#define YTKeyBoardHeight (220.0 + YTKeyBoard_SafeAreaHeight())
+#define YTKeyBoardHeight (220.0 + YTKeyBoard_SafeArea_Height)
 #define YTKeyBoardItem_Width YTKeyBoardWidth/3.0
 #define YTKeyBoardItem_Height 55.0
 

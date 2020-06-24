@@ -3,7 +3,6 @@
 //
 
 /**
- 权限类可能影响APP上架
  QQ:1538017568
  */
 
@@ -21,10 +20,12 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import <YTDevelopTools/YTSystemAlertController.h>
 #import <YTDevelopTools/YTPermissions.h>
+
 #import <YTDevelopTools/YTKeyBoardView.h>
 #import <YTDevelopTools/YTKeyBoardTextField.h>
 #import <YTDevelopTools/YTPlaceholderTextView.h>
 #import <YTDevelopTools/YTAssistiveTouchView.h>
+#import <YTDevelopTools/YTRotatingImageView.h>
 
 #else
 
@@ -35,9 +36,11 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import "YTSystemAlertController.h"
 #import "YTPermissions.h"
+
 #import "YTKeyBoardView.h"
 #import "YTKeyBoardTextField.h"
 #import "YTPlaceholderTextView.h"
 #import "YTAssistiveTouchView.h"
+#import "YTRotatingImageView.h"
 
 #endif
