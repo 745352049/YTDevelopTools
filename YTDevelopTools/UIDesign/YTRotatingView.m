@@ -1,10 +1,10 @@
 //
-//  YTRotatingImageView.m
-//  
+//  YTRotatingView.m
+//
 
-#import "YTRotatingImageView.h"
+#import "YTRotatingView.h"
 
-@interface YTRotatingImageView () {
+@interface YTRotatingView () {
     // 旋转角度
     float _angle;
     // 旋转周期
@@ -21,23 +21,7 @@
 
 @end
 
-@implementation YTRotatingImageView
-
-- (instancetype)initWithImage:(UIImage *)image {
-    self = [super initWithImage:image];
-    if (self) {
-        [self configData];
-    }
-    return self;
-}
-
-- (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage {
-    self = [super initWithImage:image highlightedImage:highlightedImage];
-    if (self) {
-        [self configData];
-    }
-    return self;
-}
+@implementation YTRotatingView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -106,7 +90,7 @@
         rotateAnimation.fillMode = kCAFillModeForwards;
         rotateAnimation.duration = duration;
         rotateAnimation.repeatCount = repeatCount;
-        [self.layer addAnimation:rotateAnimation forKey:@"YTRotatingImageView"];
+        [self.layer addAnimation:rotateAnimation forKey:@"YTRotatingView"];
     }
 }
 
@@ -131,7 +115,7 @@
             self.layer.timeOffset = 0.0;
             self.layer.beginTime = 0.0;
             
-            [self.layer removeAnimationForKey:@"YTRotatingImageView"];
+            [self.layer removeAnimationForKey:@"YTRotatingView"];
             
             _isRotating = NO;
             _isPauseRotating = NO;
@@ -162,7 +146,7 @@
     self.layer.timeOffset = 0.0;
     self.layer.beginTime = 0.0;
     
-    [self.layer removeAnimationForKey:@"YTRotatingImageView"];
+    [self.layer removeAnimationForKey:@"YTRotatingView"];
     
     _isRotating = NO;
     _isPauseRotating = NO;
@@ -172,5 +156,13 @@
 - (void)setIsResetWithResume:(BOOL)isResetWithResume {
     _isResetWithResume = isResetWithResume;
 }
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 @end

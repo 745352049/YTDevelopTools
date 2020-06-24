@@ -18,6 +18,7 @@
 		7AA45B7A246D0E9E002D9801 /* YTSystemAlertController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */; };
 		7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */; };
 		D53849F924A3271F0074120F /* YTRotatingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53849F724A3271F0074120F /* YTRotatingImageView.m */; };
+		D5384A0224A338070074120F /* YTRotatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5384A0024A338070074120F /* YTRotatingView.m */; };
 		D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D538528124A1A6870058827F /* UIColor+YTAdapter.m */; };
 		D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = D538528524A1A7590058827F /* YTAssistiveTouchView.m */; };
 		D53852AE24A1B36A0058827F /* YTPermissionMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */; };
@@ -62,6 +63,8 @@
 		7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlaceholderTextView.m; sourceTree = "<group>"; };
 		D53849F724A3271F0074120F /* YTRotatingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTRotatingImageView.m; sourceTree = "<group>"; };
 		D53849F824A3271F0074120F /* YTRotatingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRotatingImageView.h; sourceTree = "<group>"; };
+		D5384A0024A338070074120F /* YTRotatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTRotatingView.m; sourceTree = "<group>"; };
+		D5384A0124A338070074120F /* YTRotatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTRotatingView.h; sourceTree = "<group>"; };
 		D538528124A1A6870058827F /* UIColor+YTAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YTAdapter.m"; sourceTree = "<group>"; };
 		D538528224A1A6870058827F /* UIColor+YTAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YTAdapter.h"; sourceTree = "<group>"; };
 		D538528424A1A7590058827F /* YTAssistiveTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAssistiveTouchView.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 		D53852B824A1C1280058827F /* UIDesign */ = {
 			isa = PBXGroup;
 			children = (
+				D5384A0124A338070074120F /* YTRotatingView.h */,
+				D5384A0024A338070074120F /* YTRotatingView.m */,
 				D53849F824A3271F0074120F /* YTRotatingImageView.h */,
 				D53849F724A3271F0074120F /* YTRotatingImageView.m */,
 				D538528424A1A7590058827F /* YTAssistiveTouchView.h */,
@@ -234,6 +239,7 @@
 				D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */,
 				D53849F924A3271F0074120F /* YTRotatingImageView.m in Sources */,
 				7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */,
+				D5384A0224A338070074120F /* YTRotatingView.m in Sources */,
 				D53852AE24A1B36A0058827F /* YTPermissionMediaPlayer.m in Sources */,
 				7A839C552473F86000AC49ED /* YTKeyBoardView.m in Sources */,
 				7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */,

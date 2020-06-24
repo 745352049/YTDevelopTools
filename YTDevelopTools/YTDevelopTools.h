@@ -26,6 +26,7 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import <YTDevelopTools/YTPlaceholderTextView.h>
 #import <YTDevelopTools/YTAssistiveTouchView.h>
 #import <YTDevelopTools/YTRotatingImageView.h>
+#import <YTDevelopTools/YTRotatingView.h>
 
 #else
 
@@ -42,5 +43,6 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import "YTPlaceholderTextView.h"
 #import "YTAssistiveTouchView.h"
 #import "YTRotatingImageView.h"
+#import "YTRotatingView.h"
 
 #endif
