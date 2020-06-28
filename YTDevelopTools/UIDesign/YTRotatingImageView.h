@@ -4,6 +4,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface YTRotatingImageView : UIImageView
 
 /// 暂停状态下恢复旋转时 继续旋转还是重置旋转 默认为NO
@@ -17,6 +19,9 @@
 
 /// 是否停止
 @property (nonatomic, assign, readonly) BOOL isStopState;
+
+/// 动画完成的回调
+@property (nonatomic,   copy) void(^rotatingCompleteBlock)(YTRotatingImageView *rotatingImageView);
 
 /// 开始旋转
 - (void)startRotating;
@@ -37,3 +42,5 @@
 - (void)stopRotating;
 
 @end
+
+NS_ASSUME_NONNULL_END

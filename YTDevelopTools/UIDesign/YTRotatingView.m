@@ -4,7 +4,7 @@
 
 #import "YTRotatingView.h"
 
-@interface YTRotatingView () {
+@interface YTRotatingView () <CAAnimationDelegate> {
     // 旋转角度
     float _angle;
     // 旋转周期
@@ -90,7 +90,18 @@
         rotateAnimation.fillMode = kCAFillModeForwards;
         rotateAnimation.duration = duration;
         rotateAnimation.repeatCount = repeatCount;
-        [self.layer addAnimation:rotateAnimation forKey:@"YTRotatingView"];
+        rotateAnimation.delegate = self;
+        [rotateAnimation setValue:@"YTRotatingViewValue" forKey:@"YTRotatingViewKey"];
+        [self.layer addAnimation:rotateAnimation forKey:@"YTRotatingViewLayer"];
+    }
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    if (flag == NO) return;
+    if ([[anim valueForKey:@"YTRotatingViewKey"] isEqualToString:@"YTRotatingViewValue"]) {
+        if (self.rotatingCompleteBlock) {
+            self.rotatingCompleteBlock(self);
+        }
     }
 }
 
@@ -115,7 +126,7 @@
             self.layer.timeOffset = 0.0;
             self.layer.beginTime = 0.0;
             
-            [self.layer removeAnimationForKey:@"YTRotatingView"];
+            [self.layer removeAnimationForKey:@"YTRotatingViewLayer"];
             
             _isRotating = NO;
             _isPauseRotating = NO;
@@ -146,7 +157,7 @@
     self.layer.timeOffset = 0.0;
     self.layer.beginTime = 0.0;
     
-    [self.layer removeAnimationForKey:@"YTRotatingView"];
+    [self.layer removeAnimationForKey:@"YTRotatingViewLayer"];
     
     _isRotating = NO;
     _isPauseRotating = NO;

@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否停止
 @property (nonatomic, assign, readonly) BOOL isStopState;
 
+/// 动画完成的回调
+@property (nonatomic,   copy) void(^rotatingCompleteBlock)(YTRotatingView *rotatingView);
+
 /// 开始旋转
 - (void)startRotating;
 
