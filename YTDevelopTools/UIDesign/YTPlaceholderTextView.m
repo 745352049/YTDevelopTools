@@ -98,14 +98,8 @@
     if ([self.text length] > self.maxCount && self.maxCount != 0 && self.markedTextRange == nil) {
         self.text = [self.text substringToIndex:self.maxCount];
     }
-    if (_didChangeText) {
-        _didChangeText(self);
-    }
-}
-
-- (void)didChangeText:(didChangeText)block {
-    if (_didChangeText) {
-        _didChangeText = block;
+    if (self.didChangeText) {
+        self.didChangeText(self);
     }
 }
 

@@ -17,8 +17,6 @@ typedef void(^didChangeText)(YTPlaceholderTextView *textView);
 @property (nonatomic, assign) NSInteger maxCount;
 @property (nonatomic,   copy) didChangeText didChangeText;
 
-- (void)didChangeText:(didChangeText)block;
-
 @end
 
 NS_ASSUME_NONNULL_END

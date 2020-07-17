@@ -25,6 +25,7 @@
 		D53852B124A1B5AA0058827F /* YTPermissionPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */; };
 		D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B324A1B6830058827F /* YTPermissionContacts.m */; };
 		D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D53852B624A1BF620058827F /* YTPermissionEventKit.m */; };
+		D55CBB3324C13F4B001FF8EF /* YTAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D55CBB3124C13F4B001FF8EF /* YTAVPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +78,8 @@
 		D53852B324A1B6830058827F /* YTPermissionContacts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionContacts.m; sourceTree = "<group>"; };
 		D53852B524A1BF620058827F /* YTPermissionEventKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionEventKit.h; sourceTree = "<group>"; };
 		D53852B624A1BF620058827F /* YTPermissionEventKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTPermissionEventKit.m; sourceTree = "<group>"; };
+		D55CBB3124C13F4B001FF8EF /* YTAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTAVPlayer.m; sourceTree = "<group>"; };
+		D55CBB3224C13F4B001FF8EF /* YTAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTAVPlayer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 		7A4B95FD246E34AB002FBE60 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				D55CBB3224C13F4B001FF8EF /* YTAVPlayer.h */,
+				D55CBB3124C13F4B001FF8EF /* YTAVPlayer.m */,
 				7A5945D92472386A00E3EAC3 /* YTPermissions.h */,
 				7A5945DA2472386A00E3EAC3 /* YTPermissions.m */,
 				D53852AF24A1B5AA0058827F /* YTPermissionPhotos.h */,
@@ -236,6 +241,7 @@
 				7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
 				7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */,
+				D55CBB3324C13F4B001FF8EF /* YTAVPlayer.m in Sources */,
 				D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */,
 				D53849F924A3271F0074120F /* YTRotatingImageView.m in Sources */,
 				7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */,
