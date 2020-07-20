@@ -25,6 +25,7 @@
 - (void)playNetAudioWithPath:(NSString *)path {
     [self removeTimeObserver];
     [self removePlayStatus];
+    [self.audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
     
     NSURL *url = [NSURL fileURLWithPath:path];
     if ([path hasPrefix:@"http://"] || [path hasPrefix:@"https://"]) {
@@ -50,6 +51,7 @@
 - (void)playLocalAudioWithPath:(NSString *)path {
     [self removeTimeObserver];
     [self removePlayStatus];
+    [self.audioSession setCategory:AVAudioSessionCategoryAmbient error:nil];
     
     AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:[NSURL fileURLWithPath:path]];
     self.player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
@@ -164,6 +166,14 @@
     if (_player.currentItem != nil) {
         [self.player.currentItem removeObserver:self forKeyPath:@"status"];
     }
+}
+
+- (AVAudioSession *)audioSession {
+    if (!_audioSession) {
+        _audioSession = [AVAudioSession sharedInstance];
+        [_audioSession setActive:YES error:nil];
+    }
+    return _audioSession;
 }
 
 @end
