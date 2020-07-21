@@ -20,7 +20,6 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import <YTDevelopTools/YTSystemAlertController.h>
 #import <YTDevelopTools/YTPermissions.h>
-#import <YTDevelopTools/YTAVPlayer.h>
 
 #import <YTDevelopTools/YTKeyBoardView.h>
 #import <YTDevelopTools/YTKeyBoardTextField.h>
@@ -40,7 +39,6 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import "YTSystemAlertController.h"
 #import "YTPermissions.h"
-#import "YTAVPlayer.h"
 
 #import "YTKeyBoardView.h"
 #import "YTKeyBoardTextField.h"
