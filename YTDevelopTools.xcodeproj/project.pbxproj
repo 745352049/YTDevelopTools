@@ -193,9 +193,9 @@
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
 				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
 				7A5945D82472373300E3EAC3 /* Category */,
-				048F106B265C96C100CCE359 /* PermissionTool */,
 				7A4B95FD246E34AB002FBE60 /* Util */,
 				D53852B824A1C1280058827F /* UIDesign */,
+				048F106B265C96C100CCE359 /* PermissionTool */,
 			);
 			path = YTDevelopTools;
 			sourceTree = "<group>";

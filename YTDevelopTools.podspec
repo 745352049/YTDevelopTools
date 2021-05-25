@@ -56,26 +56,30 @@ Pod::Spec.new do |spec|
   
       permissionTool.public_header_files = 'YTDevelopTools/PermissionTool/YTPermissionTool.h'
       permissionTool.source_files = 'YTDevelopTools/PermissionTool/YTPermissionTool.h'
-      permissionTool.frameworks = 'UIKit', 'EventKit', 'Contacts', 'MediaPlayer', 'Photos'
+      permissionTool.frameworks = "UIKit"
       
       # PermissionEventKit
       permissionTool.subspec 'PermissionEventKit' do |permissionEventKit|
         permissionEventKit.source_files = 'YTDevelopTools/PermissionTool/PermissionEventKit/*.{h,m}'
+        permissionEventKit.frameworks = "EventKit"
       end
       
       # PermissionContacts
       permissionTool.subspec 'PermissionContacts' do |permissionContacts|
         permissionContacts.source_files = 'YTDevelopTools/PermissionTool/PermissionContacts/*.{h,m}'
+        permissionContacts.frameworks = "Contacts"
       end
       
       # PermissionMediaPlayer
       permissionTool.subspec 'PermissionMediaPlayer' do |permissionMediaPlayer|
         permissionMediaPlayer.source_files = 'YTDevelopTools/PermissionTool/PermissionMediaPlayer/*.{h,m}'
+        permissionMediaPlayer.frameworks = "MediaPlayer"
       end
             
       # PermissionPhotos
       permissionTool.subspec 'PermissionPhotos' do |permissionPhotos|
         permissionPhotos.source_files = 'YTDevelopTools/PermissionTool/PermissionPhotos/*.{h,m}'
+        permissionPhotos.frameworks = "Photos"
       end
 
   end

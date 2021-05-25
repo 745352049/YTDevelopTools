@@ -2,6 +2,8 @@
 //  YTPermissionTool.h
 //
 
+#import <UIKit/UIKit.h>
+
 #if __has_include(<YTDevelopTools/YTPermissionTool.h>)
 
 #import <YTDevelopTools/YTPermissionEventKit.h>
