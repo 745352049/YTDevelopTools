@@ -44,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		049BF9AA265CB08300A73EDA /* YTPermissionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionTool.h; sourceTree = "<group>"; };
 		7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTWaterMark.h"; sourceTree = "<group>"; };
 		7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTWaterMark.m"; sourceTree = "<group>"; };
 		7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTMD5Encrypt.m"; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		048F106B265C96C100CCE359 /* PermissionTool */ = {
 			isa = PBXGroup;
 			children = (
+				049BF9AA265CB08300A73EDA /* YTPermissionTool.h */,
 				048F1094265C9F2600CCE359 /* PermissionEventKit */,
 				048F1093265C9F1600CCE359 /* PermissionContacts */,
 				048F1092265C9EF900CCE359 /* PermissionMediaPlayer */,

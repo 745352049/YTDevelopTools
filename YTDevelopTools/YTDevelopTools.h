@@ -30,6 +30,8 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import <YTDevelopTools/YTBezierDrawPath.h>
 #import <YTDevelopTools/YTBezierDrawView.h>
 
+#import <YTDevelopTools/YTPermissionTool.h>
+
 #else
 
 #import "UIImage+YTWaterMark.h"
@@ -48,5 +50,7 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import "YTRotatingView.h"
 #import "YTBezierDrawPath.h"
 #import "YTBezierDrawView.h"
+
+#import "YTPermissionTool.h"
 
 #endif
