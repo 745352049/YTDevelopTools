@@ -6,7 +6,7 @@
 
 @implementation YTPermissionEventKit
 
-+ (void)remindersPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)remindersPermissionWithResultBlock:(PermissionEventKitResultBlock)resultBlock {
     EKAuthorizationStatus authStatus = [EKEventStore authorizationStatusForEntityType:EKEntityTypeReminder];
     if (authStatus == EKAuthorizationStatusNotDetermined) {
         EKEventStore *eventStore = [[EKEventStore alloc] init];
@@ -36,7 +36,7 @@
     }
 }
 
-+ (void)calendarsPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)calendarsPermissionWithResultBlock:(PermissionEventKitResultBlock)resultBlock {
     EKAuthorizationStatus authStatus = [EKEventStore authorizationStatusForEntityType:EKEntityTypeEvent];
     if (authStatus == EKAuthorizationStatusNotDetermined) {
         EKEventStore *eventStore = [[EKEventStore alloc] init];

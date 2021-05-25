@@ -96,19 +96,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		048F106B265C96C100CCE359 /* PermissionTool */ = {
+			isa = PBXGroup;
+			children = (
+				048F1094265C9F2600CCE359 /* PermissionEventKit */,
+				048F1093265C9F1600CCE359 /* PermissionContacts */,
+				048F1092265C9EF900CCE359 /* PermissionMediaPlayer */,
+				048F1091265C9EE400CCE359 /* PermissionPhotos */,
+			);
+			path = PermissionTool;
+			sourceTree = "<group>";
+		};
+		048F1091265C9EE400CCE359 /* PermissionPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				D53852AF24A1B5AA0058827F /* YTPermissionPhotos.h */,
+				D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */,
+			);
+			path = PermissionPhotos;
+			sourceTree = "<group>";
+		};
+		048F1092265C9EF900CCE359 /* PermissionMediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D53852AC24A1B36A0058827F /* YTPermissionMediaPlayer.h */,
+				D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */,
+			);
+			path = PermissionMediaPlayer;
+			sourceTree = "<group>";
+		};
+		048F1093265C9F1600CCE359 /* PermissionContacts */ = {
+			isa = PBXGroup;
+			children = (
+				D53852B224A1B6830058827F /* YTPermissionContacts.h */,
+				D53852B324A1B6830058827F /* YTPermissionContacts.m */,
+			);
+			path = PermissionContacts;
+			sourceTree = "<group>";
+		};
+		048F1094265C9F2600CCE359 /* PermissionEventKit */ = {
+			isa = PBXGroup;
+			children = (
+				D53852B524A1BF620058827F /* YTPermissionEventKit.h */,
+				D53852B624A1BF620058827F /* YTPermissionEventKit.m */,
+			);
+			path = PermissionEventKit;
+			sourceTree = "<group>";
+		};
 		7A4B95FD246E34AB002FBE60 /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				7A5945D92472386A00E3EAC3 /* YTPermissions.h */,
 				7A5945DA2472386A00E3EAC3 /* YTPermissions.m */,
-				D53852AF24A1B5AA0058827F /* YTPermissionPhotos.h */,
-				D53852B024A1B5AA0058827F /* YTPermissionPhotos.m */,
-				D53852AC24A1B36A0058827F /* YTPermissionMediaPlayer.h */,
-				D53852AD24A1B36A0058827F /* YTPermissionMediaPlayer.m */,
-				D53852B224A1B6830058827F /* YTPermissionContacts.h */,
-				D53852B324A1B6830058827F /* YTPermissionContacts.m */,
-				D53852B524A1BF620058827F /* YTPermissionEventKit.h */,
-				D53852B624A1BF620058827F /* YTPermissionEventKit.m */,
 				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
 				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
 			);
@@ -152,6 +191,7 @@
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
 				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
 				7A5945D82472373300E3EAC3 /* Category */,
+				048F106B265C96C100CCE359 /* PermissionTool */,
 				7A4B95FD246E34AB002FBE60 /* Util */,
 				D53852B824A1C1280058827F /* UIDesign */,
 			);
@@ -207,7 +247,7 @@
 		7AA45B4A246D061A002D9801 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					7AA45B51246D061A002D9801 = {
@@ -312,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -364,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YTDevelopTools"
-  spec.version      = "1.1.7"
+  spec.version      = "1.1.8"
   spec.summary      = "YTDevelopTools 开发工具类"
   spec.homepage     = "https://github.com/745352049/YTDevelopTools"
   spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -48,6 +48,45 @@ Pod::Spec.new do |spec|
 
   design.source_files = 'YTDevelopTools/UIDesign/*.{h,m}'
   design.frameworks   = "UIKit"
+
+  end
+  
+  # PermissionTool
+  spec.subspec 'PermissionTool' do |permissionTool|
+
+  permissionTool.source_files = 'YTDevelopTools/PermissionTool/*.{h,m}'
+  
+        # PermissionEventKit
+        permissionTool.subspec 'PermissionEventKit' do |permissionEventKit|
+        
+        permissionEventKit.source_files = 'YTDevelopTools/PermissionTool/PermissionEventKit/*.{h,m}'
+        permissionEventKit.frameworks   = "EventKit"
+        
+        end
+        
+        # PermissionContacts
+        permissionTool.subspec 'PermissionContacts' do |permissionContacts|
+            
+        permissionContacts.source_files = 'YTDevelopTools/PermissionTool/PermissionContacts/*.{h,m}'
+        permissionContacts.frameworks   = "Contacts"
+    
+        end
+        
+        # PermissionMediaPlayer
+        permissionTool.subspec 'PermissionMediaPlayer' do |permissionMediaPlayer|
+            
+        permissionMediaPlayer.source_files = 'YTDevelopTools/PermissionTool/PermissionMediaPlayer/*.{h,m}'
+        permissionMediaPlayer.frameworks   = "MediaPlayer"
+    
+        end
+        
+        # PermissionPhotos
+        permissionTool.subspec 'PermissionPhotos' do |permissionPhotos|
+            
+        permissionPhotos.source_files = 'YTDevelopTools/PermissionTool/PermissionPhotos/*.{h,m}'
+        permissionPhotos.frameworks   = "UIKit", "Photos"
+    
+        end
 
   end
 

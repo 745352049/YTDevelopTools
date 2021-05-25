@@ -6,7 +6,7 @@
 
 @implementation YTPermissionPhotos
 
-+ (void)cameraPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)cameraPermissionWithResultBlock:(PermissionPhotosResultBlock)resultBlock {
     AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         if (authStatus == AVAuthorizationStatusNotDetermined) {
@@ -42,7 +42,7 @@
     }
 }
 
-+ (void)photoLibraryPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)photoLibraryPermissionWithResultBlock:(PermissionPhotosResultBlock)resultBlock {
     PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
         if (authStatus == PHAuthorizationStatusNotDetermined) {
@@ -83,7 +83,7 @@
     }
 }
 
-+ (void)photoAlbumPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)photoAlbumPermissionWithResultBlock:(PermissionPhotosResultBlock)resultBlock {
     PHAuthorizationStatus authStatus = [PHPhotoLibrary authorizationStatus];
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
         if (authStatus == AVAuthorizationStatusNotDetermined) {
@@ -124,7 +124,7 @@
     }
 }
 
-+ (void)microphonePermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)microphonePermissionWithResultBlock:(PermissionPhotosResultBlock)resultBlock {
     AVAudioSessionRecordPermission status = [[AVAudioSession sharedInstance] recordPermission];
     if (status == AVAudioSessionRecordPermissionUndetermined) {
         [[AVAudioSession sharedInstance] requestRecordPermission:^(BOOL granted) {

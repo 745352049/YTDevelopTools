@@ -6,7 +6,7 @@
 
 @implementation YTPermissionMediaPlayer
 
-+ (void)mediaLibraryPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)mediaLibraryPermissionWithResultBlock:(PermissionMediaPlayerResultBlock)resultBlock {
     if (@available(iOS 9.3, *)) {
         MPMediaLibraryAuthorizationStatus authStatus = [MPMediaLibrary authorizationStatus];
         if (authStatus == MPMediaLibraryAuthorizationStatusNotDetermined) {

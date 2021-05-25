@@ -4,8 +4,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^resultBlock)(BOOL isPermission, NSString * _Nonnull resultStr);
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YTPermissions : NSObject

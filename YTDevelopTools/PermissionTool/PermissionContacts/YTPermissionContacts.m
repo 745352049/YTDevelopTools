@@ -6,7 +6,7 @@
 
 @implementation YTPermissionContacts
 
-+ (void)contactsPermissionWithResultBlock:(resultBlock)resultBlock {
++ (void)contactsPermissionWithResultBlock:(PermissionContactsResultBlock)resultBlock {
     if (@available(iOS 9.0, *)) {
         CNAuthorizationStatus status = [CNContactStore authorizationStatusForEntityType:CNEntityTypeContacts];
         if (status == CNAuthorizationStatusNotDetermined) {

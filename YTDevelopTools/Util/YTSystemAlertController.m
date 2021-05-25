@@ -15,14 +15,14 @@
             AlertBlock:(YTAlertClickBlock _Nullable)alertClickBlock {
     NSAssert(actionStyles.count == actionTitles.count, @"自定义系统弹框的按钮标题和按钮风格的数组长度应该保持一致");
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:preferredStyle];
-    for (int i = 0; i < actionTitles.count; i++) {
-        UIAlertAction *action = [UIAlertAction actionWithTitle:actionTitles[i] style:[actionStyles[i] integerValue] handler:^(UIAlertAction * _Nonnull action) {
+    [actionTitles enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        UIAlertAction *action = [UIAlertAction actionWithTitle:obj style:[actionStyles[idx] integerValue] handler:^(UIAlertAction * _Nonnull action) {
             if (alertClickBlock) {
-                alertClickBlock(i);
+                alertClickBlock(idx);
             }
         }];
         [alertController addAction:action];
-    }
+    }];
     [controller presentViewController:alertController animated:YES completion:nil];
 }
 
