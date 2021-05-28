@@ -10,7 +10,6 @@
 		7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */; };
 		7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */; };
 		7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */; };
-		7A5945DB2472386A00E3EAC3 /* YTPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5945DA2472386A00E3EAC3 /* YTPermissions.m */; };
 		7A839C542473F86000AC49ED /* YTKeyBoardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */; };
 		7A839C552473F86000AC49ED /* YTKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A839C532473F86000AC49ED /* YTKeyBoardView.m */; };
 		7AA45B58246D061A002D9801 /* YTDevelopTools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B55246D061A002D9801 /* YTDevelopTools.h */; };
@@ -51,8 +50,6 @@
 		7A4B9633246E799E002FBE60 /* NSString+YTMD5Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTMD5Encrypt.h"; sourceTree = "<group>"; };
 		7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YTBundle.m"; sourceTree = "<group>"; };
 		7A5945D6247236B000E3EAC3 /* NSBundle+YTBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YTBundle.h"; sourceTree = "<group>"; };
-		7A5945D92472386A00E3EAC3 /* YTPermissions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPermissions.h; sourceTree = "<group>"; };
-		7A5945DA2472386A00E3EAC3 /* YTPermissions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPermissions.m; sourceTree = "<group>"; };
 		7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YTDevelopTools.bundle; sourceTree = "<group>"; };
 		7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKeyBoardTextField.m; sourceTree = "<group>"; };
 		7A839C512473F86000AC49ED /* YTKeyBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKeyBoardView.h; sourceTree = "<group>"; };
@@ -64,6 +61,8 @@
 		7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSystemAlertController.m; sourceTree = "<group>"; };
 		7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlaceholderTextView.h; sourceTree = "<group>"; };
 		7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlaceholderTextView.m; sourceTree = "<group>"; };
+		BE8E34F32660B5A10056FAF8 /* YTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCategories.h; sourceTree = "<group>"; };
+		BE8E34FA2660B7C80056FAF8 /* YTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExtension.h; sourceTree = "<group>"; };
 		D51583E124C5660A00A783B0 /* YTBezierDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBezierDrawPath.h; sourceTree = "<group>"; };
 		D51583E224C5660A00A783B0 /* YTBezierDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBezierDrawView.h; sourceTree = "<group>"; };
 		D51583E324C5660A00A783B0 /* YTBezierDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTBezierDrawView.m; sourceTree = "<group>"; };
@@ -145,28 +144,23 @@
 			path = PermissionEventKit;
 			sourceTree = "<group>";
 		};
-		7A4B95FD246E34AB002FBE60 /* Util */ = {
+		7A4B95FD246E34AB002FBE60 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7A5945D92472386A00E3EAC3 /* YTPermissions.h */,
-				7A5945DA2472386A00E3EAC3 /* YTPermissions.m */,
-				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
-				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+				BE8E34FA2660B7C80056FAF8 /* YTExtension.h */,
+				BE8E34F92660B7AC0056FAF8 /* NSObject */,
 			);
-			path = Util;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7A5945D82472373300E3EAC3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				D538528224A1A6870058827F /* UIColor+YTAdapter.h */,
-				D538528124A1A6870058827F /* UIColor+YTAdapter.m */,
-				7A5945D6247236B000E3EAC3 /* NSBundle+YTBundle.h */,
-				7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */,
-				7A4B9633246E799E002FBE60 /* NSString+YTMD5Encrypt.h */,
-				7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */,
-				7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */,
-				7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */,
+				BE8E34F32660B5A10056FAF8 /* YTCategories.h */,
+				BE8E34F72660B6DD0056FAF8 /* UIImage */,
+				BE8E34F62660B6B10056FAF8 /* NSBundle */,
+				BE8E34F42660B6110056FAF8 /* NSString */,
+				BE8E34F22660B5380056FAF8 /* UIColor */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -193,11 +187,56 @@
 				7AA45B55246D061A002D9801 /* YTDevelopTools.h */,
 				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
 				7A5945D82472373300E3EAC3 /* Category */,
-				7A4B95FD246E34AB002FBE60 /* Util */,
+				7A4B95FD246E34AB002FBE60 /* Extension */,
 				D53852B824A1C1280058827F /* UIDesign */,
 				048F106B265C96C100CCE359 /* PermissionTool */,
 			);
 			path = YTDevelopTools;
+			sourceTree = "<group>";
+		};
+		BE8E34F22660B5380056FAF8 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				D538528224A1A6870058827F /* UIColor+YTAdapter.h */,
+				D538528124A1A6870058827F /* UIColor+YTAdapter.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		BE8E34F42660B6110056FAF8 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B9633246E799E002FBE60 /* NSString+YTMD5Encrypt.h */,
+				7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		BE8E34F62660B6B10056FAF8 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				7A5945D6247236B000E3EAC3 /* NSBundle+YTBundle.h */,
+				7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		BE8E34F72660B6DD0056FAF8 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */,
+				7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		BE8E34F92660B7AC0056FAF8 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */,
+				7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		D53852B824A1C1280058827F /* UIDesign */ = {
@@ -283,7 +322,6 @@
 				D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */,
 				D51583E524C5660A00A783B0 /* YTBezierDrawView.m in Sources */,
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
-				7A5945DB2472386A00E3EAC3 /* YTPermissions.m in Sources */,
 				D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */,
 				D53852B124A1B5AA0058827F /* YTPermissionPhotos.m in Sources */,
 				7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */,

@@ -13,13 +13,12 @@
 FOUNDATION_EXPORT double YTDevelopToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
-#import <YTDevelopTools/UIImage+YTWaterMark.h>
-#import <YTDevelopTools/NSString+YTMD5Encrypt.h>
-#import <YTDevelopTools/NSBundle+YTBundle.h>
-#import <YTDevelopTools/UIColor+YTAdapter.h>
+#import <YTDevelopTools/YTCategories.h>
 
-#import <YTDevelopTools/YTSystemAlertController.h>
-#import <YTDevelopTools/YTPermissions.h>
+#import <YTDevelopTools/YTExtension.h>
+
+#import <YTDevelopTools/YTPermissionTool.h>
+
 
 #import <YTDevelopTools/YTKeyBoardView.h>
 #import <YTDevelopTools/YTKeyBoardTextField.h>
@@ -30,17 +29,14 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import <YTDevelopTools/YTBezierDrawPath.h>
 #import <YTDevelopTools/YTBezierDrawView.h>
 
-#import <YTDevelopTools/YTPermissionTool.h>
-
 #else
 
-#import "UIImage+YTWaterMark.h"
-#import "NSString+YTMD5Encrypt.h"
-#import "NSBundle+YTBundle.h"
-#import "UIColor+YTAdapter.h"
+#import "YTCategories.h"
 
-#import "YTSystemAlertController.h"
-#import "YTPermissions.h"
+#import "YTExtension.h"
+
+#import "YTPermissionTool.h"
+
 
 #import "YTKeyBoardView.h"
 #import "YTKeyBoardTextField.h"
@@ -50,7 +46,5 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import "YTRotatingView.h"
 #import "YTBezierDrawPath.h"
 #import "YTBezierDrawView.h"
-
-#import "YTPermissionTool.h"
 
 #endif

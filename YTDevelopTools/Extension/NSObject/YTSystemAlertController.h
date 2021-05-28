@@ -52,4 +52,7 @@ typedef void(^YTAlertClickBlock)(NSInteger index);
             Controller:(UIViewController *_Nonnull)controller
             AlertBlock:(YTAlertClickBlock _Nullable)alertClickBlock;
 
+/// 跳转到设置
++ (void)jumpToSettings;
+
 @end
