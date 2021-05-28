@@ -32,30 +32,23 @@ Pod::Spec.new do |spec|
     
         category.public_header_files = 'YTDevelopTools/Category/YTCategories.h'
         category.source_files = 'YTDevelopTools/Category/YTCategories.h'
-        category.frameworks = "UIKit"
         
         # UIImage
         category.subspec 'UIImage' do |image|
             image.source_files = 'YTDevelopTools/Category/UIImage/*.{h,m}'
-            image.frameworks = "UIKit"
+            image.frameworks = 'UIKit'
         end
         
         # NSBundle
         category.subspec 'NSBundle' do |bundle|
             bundle.source_files = 'YTDevelopTools/Category/NSBundle/*.{h,m}'
-            bundle.frameworks = "Foundation"
-        end
-        
-        # NSString
-        category.subspec 'NSString' do |string|
-            string.source_files = 'YTDevelopTools/Category/NSString/*.{h,m}'
-            string.frameworks = "Foundation", "CommonCrypto"
+            bundle.frameworks = 'Foundation'
         end
         
         # UIColor
         category.subspec 'UIColor' do |color|
             color.source_files = 'YTDevelopTools/Category/UIColor/*.{h,m}'
-            color.frameworks = "UIKit"
+            color.frameworks = 'UIKit'
         end
 
     end
@@ -66,12 +59,12 @@ Pod::Spec.new do |spec|
     
         extension.public_header_files = 'YTDevelopTools/Extension/YTExtension.h'
         extension.source_files = 'YTDevelopTools/Extension/YTExtension.h'
-        extension.frameworks = "UIKit"
+        extension.frameworks = 'UIKit'
         
         # NSObject
         extension.subspec 'NSObject' do |object|
             object.source_files = 'YTDevelopTools/Extension/NSObject/*.{h,m}'
-            object.frameworks = "UIKit"
+            object.frameworks = 'UIKit'
         end
 
     end
@@ -81,7 +74,7 @@ Pod::Spec.new do |spec|
     spec.subspec 'UIDesign' do |design|
 
         design.source_files = 'YTDevelopTools/UIDesign/*.{h,m}'
-        design.frameworks   = "UIKit"
+        design.frameworks   = 'UIKit'
 
     end
 
@@ -91,30 +84,30 @@ Pod::Spec.new do |spec|
 
         permissionTool.public_header_files = 'YTDevelopTools/PermissionTool/YTPermissionTool.h'
         permissionTool.source_files = 'YTDevelopTools/PermissionTool/YTPermissionTool.h'
-        permissionTool.frameworks = "UIKit"
+        permissionTool.frameworks = 'UIKit'
       
         # PermissionEventKit
         permissionTool.subspec 'PermissionEventKit' do |permissionEventKit|
             permissionEventKit.source_files = 'YTDevelopTools/PermissionTool/PermissionEventKit/*.{h,m}'
-            permissionEventKit.frameworks = "EventKit"
+            permissionEventKit.frameworks = 'EventKit'
         end
       
         # PermissionContacts
         permissionTool.subspec 'PermissionContacts' do |permissionContacts|
             permissionContacts.source_files = 'YTDevelopTools/PermissionTool/PermissionContacts/*.{h,m}'
-            permissionContacts.frameworks = "Contacts"
+            permissionContacts.frameworks = 'Contacts'
         end
       
         # PermissionMediaPlayer
         permissionTool.subspec 'PermissionMediaPlayer' do |permissionMediaPlayer|
             permissionMediaPlayer.source_files = 'YTDevelopTools/PermissionTool/PermissionMediaPlayer/*.{h,m}'
-            permissionMediaPlayer.frameworks = "MediaPlayer"
+            permissionMediaPlayer.frameworks = 'MediaPlayer'
         end
             
         # PermissionPhotos
         permissionTool.subspec 'PermissionPhotos' do |permissionPhotos|
             permissionPhotos.source_files = 'YTDevelopTools/PermissionTool/PermissionPhotos/*.{h,m}'
-            permissionPhotos.frameworks = "Photos"
+            permissionPhotos.frameworks = 'Photos'
         end
 
     end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */; };
-		7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */; };
 		7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */; };
 		7A839C542473F86000AC49ED /* YTKeyBoardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */; };
 		7A839C552473F86000AC49ED /* YTKeyBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A839C532473F86000AC49ED /* YTKeyBoardView.m */; };
@@ -46,8 +45,6 @@
 		049BF9AA265CB08300A73EDA /* YTPermissionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionTool.h; sourceTree = "<group>"; };
 		7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTWaterMark.h"; sourceTree = "<group>"; };
 		7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTWaterMark.m"; sourceTree = "<group>"; };
-		7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTMD5Encrypt.m"; sourceTree = "<group>"; };
-		7A4B9633246E799E002FBE60 /* NSString+YTMD5Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTMD5Encrypt.h"; sourceTree = "<group>"; };
 		7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YTBundle.m"; sourceTree = "<group>"; };
 		7A5945D6247236B000E3EAC3 /* NSBundle+YTBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YTBundle.h"; sourceTree = "<group>"; };
 		7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YTDevelopTools.bundle; sourceTree = "<group>"; };
@@ -159,7 +156,6 @@
 				BE8E34F32660B5A10056FAF8 /* YTCategories.h */,
 				BE8E34F72660B6DD0056FAF8 /* UIImage */,
 				BE8E34F62660B6B10056FAF8 /* NSBundle */,
-				BE8E34F42660B6110056FAF8 /* NSString */,
 				BE8E34F22660B5380056FAF8 /* UIColor */,
 			);
 			path = Category;
@@ -201,15 +197,6 @@
 				D538528124A1A6870058827F /* UIColor+YTAdapter.m */,
 			);
 			path = UIColor;
-			sourceTree = "<group>";
-		};
-		BE8E34F42660B6110056FAF8 /* NSString */ = {
-			isa = PBXGroup;
-			children = (
-				7A4B9633246E799E002FBE60 /* NSString+YTMD5Encrypt.h */,
-				7A4B9632246E799E002FBE60 /* NSString+YTMD5Encrypt.m */,
-			);
-			path = NSString;
 			sourceTree = "<group>";
 		};
 		BE8E34F62660B6B10056FAF8 /* NSBundle */ = {
@@ -330,7 +317,6 @@
 				7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */,
 				D538528624A1A7590058827F /* YTAssistiveTouchView.m in Sources */,
 				D53849F924A3271F0074120F /* YTRotatingImageView.m in Sources */,
-				7A4B9634246E799E002FBE60 /* NSString+YTMD5Encrypt.m in Sources */,
 				D5384A0224A338070074120F /* YTRotatingView.m in Sources */,
 				D53852AE24A1B36A0058827F /* YTPermissionMediaPlayer.m in Sources */,
 				7A839C552473F86000AC49ED /* YTKeyBoardView.m in Sources */,
