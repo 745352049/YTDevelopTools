@@ -4,8 +4,6 @@
 
 #import "YTKeyBoardTextField.h"
 
-#import "YTKeyBoardView.h"
-
 @interface ObserverObject : NSObject
 
 @property (nonatomic, strong) NSMutableArray *valueArray;

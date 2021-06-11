@@ -58,6 +58,7 @@
 		7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSystemAlertController.m; sourceTree = "<group>"; };
 		7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlaceholderTextView.h; sourceTree = "<group>"; };
 		7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlaceholderTextView.m; sourceTree = "<group>"; };
+		BE5981872672177E00999E64 /* YTUIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTUIDesign.h; sourceTree = "<group>"; };
 		BE8E34F32660B5A10056FAF8 /* YTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCategories.h; sourceTree = "<group>"; };
 		BE8E34FA2660B7C80056FAF8 /* YTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExtension.h; sourceTree = "<group>"; };
 		D51583E124C5660A00A783B0 /* YTBezierDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTBezierDrawPath.h; sourceTree = "<group>"; };
@@ -190,6 +191,57 @@
 			path = YTDevelopTools;
 			sourceTree = "<group>";
 		};
+		BE598181267216BC00999E64 /* BezierDrawPath */ = {
+			isa = PBXGroup;
+			children = (
+				D51583E124C5660A00A783B0 /* YTBezierDrawPath.h */,
+				D51583E424C5660A00A783B0 /* YTBezierDrawPath.m */,
+				D51583E224C5660A00A783B0 /* YTBezierDrawView.h */,
+				D51583E324C5660A00A783B0 /* YTBezierDrawView.m */,
+			);
+			path = BezierDrawPath;
+			sourceTree = "<group>";
+		};
+		BE598183267216DE00999E64 /* RotatingView */ = {
+			isa = PBXGroup;
+			children = (
+				D5384A0124A338070074120F /* YTRotatingView.h */,
+				D5384A0024A338070074120F /* YTRotatingView.m */,
+				D53849F824A3271F0074120F /* YTRotatingImageView.h */,
+				D53849F724A3271F0074120F /* YTRotatingImageView.m */,
+			);
+			path = RotatingView;
+			sourceTree = "<group>";
+		};
+		BE598184267216F200999E64 /* PlaceholderTextView */ = {
+			isa = PBXGroup;
+			children = (
+				7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */,
+				7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */,
+			);
+			path = PlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		BE5981852672171A00999E64 /* AssistiveTouchView */ = {
+			isa = PBXGroup;
+			children = (
+				D538528424A1A7590058827F /* YTAssistiveTouchView.h */,
+				D538528524A1A7590058827F /* YTAssistiveTouchView.m */,
+			);
+			path = AssistiveTouchView;
+			sourceTree = "<group>";
+		};
+		BE5981862672173200999E64 /* KeyBoardTextField */ = {
+			isa = PBXGroup;
+			children = (
+				7A839C522473F86000AC49ED /* YTKeyBoardTextField.h */,
+				7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */,
+				7A839C512473F86000AC49ED /* YTKeyBoardView.h */,
+				7A839C532473F86000AC49ED /* YTKeyBoardView.m */,
+			);
+			path = KeyBoardTextField;
+			sourceTree = "<group>";
+		};
 		BE8E34F22660B5380056FAF8 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,22 +281,12 @@
 		D53852B824A1C1280058827F /* UIDesign */ = {
 			isa = PBXGroup;
 			children = (
-				D51583E124C5660A00A783B0 /* YTBezierDrawPath.h */,
-				D51583E424C5660A00A783B0 /* YTBezierDrawPath.m */,
-				D51583E224C5660A00A783B0 /* YTBezierDrawView.h */,
-				D51583E324C5660A00A783B0 /* YTBezierDrawView.m */,
-				D5384A0124A338070074120F /* YTRotatingView.h */,
-				D5384A0024A338070074120F /* YTRotatingView.m */,
-				D53849F824A3271F0074120F /* YTRotatingImageView.h */,
-				D53849F724A3271F0074120F /* YTRotatingImageView.m */,
-				D538528424A1A7590058827F /* YTAssistiveTouchView.h */,
-				D538528524A1A7590058827F /* YTAssistiveTouchView.m */,
-				7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */,
-				7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */,
-				7A839C522473F86000AC49ED /* YTKeyBoardTextField.h */,
-				7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */,
-				7A839C512473F86000AC49ED /* YTKeyBoardView.h */,
-				7A839C532473F86000AC49ED /* YTKeyBoardView.m */,
+				BE5981872672177E00999E64 /* YTUIDesign.h */,
+				BE5981862672173200999E64 /* KeyBoardTextField */,
+				BE5981852672171A00999E64 /* AssistiveTouchView */,
+				BE598184267216F200999E64 /* PlaceholderTextView */,
+				BE598183267216DE00999E64 /* RotatingView */,
+				BE598181267216BC00999E64 /* BezierDrawPath */,
 			);
 			path = UIDesign;
 			sourceTree = "<group>";

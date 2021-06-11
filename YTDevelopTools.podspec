@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.2.1"
+    spec.version      = "1.3.0"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -72,9 +72,39 @@ Pod::Spec.new do |spec|
 
     # UIDesign
     spec.subspec 'UIDesign' do |design|
-
-        design.source_files = 'YTDevelopTools/UIDesign/*.{h,m}'
-        design.frameworks   = 'UIKit'
+    
+        design.public_header_files = 'YTDevelopTools/UIDesign/YTUIDesign.h'
+        design.source_files = 'YTDevelopTools/UIDesign/YTUIDesign.h'
+        
+        # KeyBoardTextField
+        design.subspec 'KeyBoardTextField' do |keyBoardTextField|
+            keyBoardTextField.source_files = 'YTDevelopTools/UIDesign/KeyBoardTextField/*.{h,m}'
+            keyBoardTextField.frameworks = 'UIKit'
+        end
+        
+        # AssistiveTouchView
+        design.subspec 'AssistiveTouchView' do |assistiveTouchView|
+            assistiveTouchView.source_files = 'YTDevelopTools/UIDesign/AssistiveTouchView/*.{h,m}'
+            assistiveTouchView.frameworks = 'UIKit'
+        end
+        
+        # PlaceholderTextView
+        design.subspec 'PlaceholderTextView' do |placeholderTextView|
+            placeholderTextView.source_files = 'YTDevelopTools/UIDesign/PlaceholderTextView/*.{h,m}'
+            placeholderTextView.frameworks = 'UIKit'
+        end
+        
+        # RotatingView
+        design.subspec 'RotatingView' do |rotatingView|
+            rotatingView.source_files = 'YTDevelopTools/UIDesign/RotatingView/*.{h,m}'
+            rotatingView.frameworks = 'UIKit'
+        end
+        
+        # BezierDrawPath
+        design.subspec 'BezierDrawPath' do |bezierDrawPath|
+            bezierDrawPath.source_files = 'YTDevelopTools/UIDesign/BezierDrawPath/*.{h,m}'
+            bezierDrawPath.frameworks = 'UIKit'
+        end
 
     end
 
