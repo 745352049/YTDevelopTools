@@ -1,9 +1,6 @@
 //
 //  YTUIDesign.h
-//  YTDevelopTools
-//
-//  Created by 闫廷 on 2021/6/10.
-//
+//  
 
 #ifndef YTUIDesign_h
 #define YTUIDesign_h

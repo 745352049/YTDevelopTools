@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.3.0"
+    spec.version      = "1.3.1"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -50,6 +50,12 @@ Pod::Spec.new do |spec|
             color.source_files = 'YTDevelopTools/Category/UIColor/*.{h,m}'
             color.frameworks = 'UIKit'
         end
+        
+        # UILabel
+        category.subspec 'UILabel' do |label|
+            label.source_files = 'YTDevelopTools/Category/UILabel/*.{h,m}'
+            label.frameworks = 'UIKit'
+        end
 
     end
 
@@ -59,7 +65,6 @@ Pod::Spec.new do |spec|
     
         extension.public_header_files = 'YTDevelopTools/Extension/YTExtension.h'
         extension.source_files = 'YTDevelopTools/Extension/YTExtension.h'
-        extension.frameworks = 'UIKit'
         
         # NSObject
         extension.subspec 'NSObject' do |object|
@@ -139,6 +144,15 @@ Pod::Spec.new do |spec|
             permissionPhotos.source_files = 'YTDevelopTools/PermissionTool/PermissionPhotos/*.{h,m}'
             permissionPhotos.frameworks = 'Photos'
         end
+
+    end
+    
+    
+    # MacrosHeader
+    spec.subspec 'MacrosHeader' do |macrosHeader|
+    
+        macrosHeader.public_header_files = 'YTDevelopTools/MacrosHeader/YTMacrosHeader.h'
+        macrosHeader.source_files = 'YTDevelopTools/MacrosHeader/YTMacrosHeader.h'
 
     end
 

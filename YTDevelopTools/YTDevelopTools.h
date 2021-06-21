@@ -21,6 +21,8 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import <YTDevelopTools/YTUIDesign.h>
 
+#import <YTDevelopTools/YTMacrosHeader.h>
+
 #else
 
 #import "YTCategories.h"
@@ -30,5 +32,7 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 #import "YTPermissionTool.h"
 
 #import "YTUIDesign.h"
+
+#import "YTMacrosHeader.h"
 
 #endif

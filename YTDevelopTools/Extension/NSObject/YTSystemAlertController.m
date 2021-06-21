@@ -36,8 +36,9 @@
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
         }
     } else {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Cannot jump to < Settings >, please manually jump to < Settings >!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-        [alert show];
+        [YTSystemAlertController alertWithTitle:@"Error" Message:@"Cannot jump to < Settings >, please manually jump to < Settings >!" PreferredStyle:UIAlertControllerStyleAlert ActionTitles:@[@"OK"] ActionStyles:@[@"1"] Controller:[UIApplication sharedApplication].keyWindow.rootViewController AlertBlock:^(NSInteger index) {
+            
+        }];
     }
 }
 
