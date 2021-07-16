@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.3.1"
+    spec.version      = "1.3.2"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -55,6 +55,24 @@ Pod::Spec.new do |spec|
         category.subspec 'UILabel' do |label|
             label.source_files = 'YTDevelopTools/Category/UILabel/*.{h,m}'
             label.frameworks = 'UIKit'
+        end
+        
+        # UIView
+        category.subspec 'UIView' do |view|
+            view.source_files = 'YTDevelopTools/Category/UIView/*.{h,m}'
+            view.frameworks = 'UIKit'
+        end
+        
+        # NSArray
+        category.subspec 'NSArray' do |array|
+            array.source_files = 'YTDevelopTools/Category/NSArray/*.{h,m}'
+            array.frameworks = 'Foundation'
+        end
+                
+        # NSArray
+        category.subspec 'NSString' do |string|
+            string.source_files = 'YTDevelopTools/Category/NSString/*.{h,m}'
+            string.frameworks = 'Foundation'
         end
 
     end
@@ -153,6 +171,11 @@ Pod::Spec.new do |spec|
     
         macrosHeader.public_header_files = 'YTDevelopTools/MacrosHeader/YTMacrosHeader.h'
         macrosHeader.source_files = 'YTDevelopTools/MacrosHeader/YTMacrosHeader.h'
+        
+        # Header
+        macrosHeader.subspec 'Header' do |header|
+            header.source_files = 'YTDevelopTools/MacrosHeader/Header/*.{h,m}'
+        end
 
     end
 

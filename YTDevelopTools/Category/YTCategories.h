@@ -8,6 +8,9 @@
 #import <YTDevelopTools/NSBundle+YTBundle.h>
 #import <YTDevelopTools/UIImage+YTWaterMark.h>
 #import <YTDevelopTools/UILabel+YTFastLabel.h>
+#import <YTDevelopTools/UIView+YTShadowCorner.h>
+#import <YTDevelopTools/NSArray+YTSafe.h>
+#import <YTDevelopTools/NSString+YTCheck.h>
 
 #else
 
@@ -15,5 +18,8 @@
 #import "NSBundle+YTBundle.h"
 #import "UIImage+YTWaterMark.h"
 #import "UILabel+YTFastLabel.h"
+#import "UIView+YTShadowCorner.h"
+#import "NSArray+YTSafe.h"
+#import "NSString+YTCheck.h"
 
 #endif

@@ -15,6 +15,9 @@
 		7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */; };
 		7AA45B7A246D0E9E002D9801 /* YTSystemAlertController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AA45B5E246D0874002D9801 /* YTSystemAlertController.h */; };
 		7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */; };
+		BE0CB17A26A126F20085F815 /* UIView+YTShadowCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB17926A126F20085F815 /* UIView+YTShadowCorner.m */; };
+		BE0CB18326A12D300085F815 /* NSArray+YTSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB18226A12D300085F815 /* NSArray+YTSafe.m */; };
+		BE0CB18A26A144120085F815 /* NSString+YTCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB18926A144120085F815 /* NSString+YTCheck.m */; };
 		BEC992A7267C6F54004E430F /* YTCodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC992A6267C6F54004E430F /* YTCodeFactory.m */; };
 		BEC992BA267C828C004E430F /* UILabel+YTFastLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC992B8267C828C004E430F /* UILabel+YTFastLabel.m */; };
 		D51583E524C5660A00A783B0 /* YTBezierDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51583E324C5660A00A783B0 /* YTBezierDrawView.m */; };
@@ -60,10 +63,18 @@
 		7AA45B5F246D0874002D9801 /* YTSystemAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTSystemAlertController.m; sourceTree = "<group>"; };
 		7AE23C77248F5ADC00D5C07F /* YTPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlaceholderTextView.h; sourceTree = "<group>"; };
 		7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlaceholderTextView.m; sourceTree = "<group>"; };
+		BE0CB17826A126F20085F815 /* UIView+YTShadowCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YTShadowCorner.h"; sourceTree = "<group>"; };
+		BE0CB17926A126F20085F815 /* UIView+YTShadowCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YTShadowCorner.m"; sourceTree = "<group>"; };
+		BE0CB17B26A128850085F815 /* YTMacrosHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTMacrosHeader.h; sourceTree = "<group>"; };
+		BE0CB17C26A1295F0085F815 /* YTMethodHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTMethodHeader.h; sourceTree = "<group>"; };
+		BE0CB18126A12D300085F815 /* NSArray+YTSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YTSafe.h"; sourceTree = "<group>"; };
+		BE0CB18226A12D300085F815 /* NSArray+YTSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YTSafe.m"; sourceTree = "<group>"; };
+		BE0CB18826A144120085F815 /* NSString+YTCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTCheck.h"; sourceTree = "<group>"; };
+		BE0CB18926A144120085F815 /* NSString+YTCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTCheck.m"; sourceTree = "<group>"; };
 		BE5981872672177E00999E64 /* YTUIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTUIDesign.h; sourceTree = "<group>"; };
 		BE8E34F32660B5A10056FAF8 /* YTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCategories.h; sourceTree = "<group>"; };
 		BE8E34FA2660B7C80056FAF8 /* YTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExtension.h; sourceTree = "<group>"; };
-		BEC992A2267C6837004E430F /* YTMacrosHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTMacrosHeader.h; sourceTree = "<group>"; };
+		BEC992A2267C6837004E430F /* YTDeviceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDeviceHeader.h; sourceTree = "<group>"; };
 		BEC992A5267C6F54004E430F /* YTCodeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCodeFactory.h; sourceTree = "<group>"; };
 		BEC992A6267C6F54004E430F /* YTCodeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTCodeFactory.m; sourceTree = "<group>"; };
 		BEC992B8267C828C004E430F /* UILabel+YTFastLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YTFastLabel.m"; sourceTree = "<group>"; };
@@ -166,6 +177,9 @@
 				BE8E34F62660B6B10056FAF8 /* NSBundle */,
 				BE8E34F22660B5380056FAF8 /* UIColor */,
 				BEC992B7267C8275004E430F /* UILabel */,
+				BE0CB17726A126D80085F815 /* UIView */,
+				BE0CB18026A12D080085F815 /* NSArray */,
+				BE0CB18726A143FF0085F815 /* NSString */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -198,6 +212,42 @@
 				BEC992A1267C6824004E430F /* MacrosHeader */,
 			);
 			path = YTDevelopTools;
+			sourceTree = "<group>";
+		};
+		BE0CB17726A126D80085F815 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CB17826A126F20085F815 /* UIView+YTShadowCorner.h */,
+				BE0CB17926A126F20085F815 /* UIView+YTShadowCorner.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		BE0CB18026A12D080085F815 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CB18126A12D300085F815 /* NSArray+YTSafe.h */,
+				BE0CB18226A12D300085F815 /* NSArray+YTSafe.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		BE0CB18726A143FF0085F815 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				BE0CB18826A144120085F815 /* NSString+YTCheck.h */,
+				BE0CB18926A144120085F815 /* NSString+YTCheck.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		BE0CB18B26A148850085F815 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BEC992A2267C6837004E430F /* YTDeviceHeader.h */,
+				BE0CB17C26A1295F0085F815 /* YTMethodHeader.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		BE598181267216BC00999E64 /* BezierDrawPath */ = {
@@ -292,7 +342,8 @@
 		BEC992A1267C6824004E430F /* MacrosHeader */ = {
 			isa = PBXGroup;
 			children = (
-				BEC992A2267C6837004E430F /* YTMacrosHeader.h */,
+				BE0CB17B26A128850085F815 /* YTMacrosHeader.h */,
+				BE0CB18B26A148850085F815 /* Header */,
 			);
 			path = MacrosHeader;
 			sourceTree = "<group>";
@@ -376,12 +427,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE0CB18A26A144120085F815 /* NSString+YTCheck.m in Sources */,
 				D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */,
 				D51583E524C5660A00A783B0 /* YTBezierDrawView.m in Sources */,
+				BE0CB18326A12D300085F815 /* NSArray+YTSafe.m in Sources */,
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
 				D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */,
 				BEC992A7267C6F54004E430F /* YTCodeFactory.m in Sources */,
 				D53852B124A1B5AA0058827F /* YTPermissionPhotos.m in Sources */,
+				BE0CB17A26A126F20085F815 /* UIView+YTShadowCorner.m in Sources */,
 				7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
 				D51583E624C5660A00A783B0 /* YTBezierDrawPath.m in Sources */,
