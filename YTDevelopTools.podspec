@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.3.2"
+    spec.version      = "1.3.3"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -69,10 +69,16 @@ Pod::Spec.new do |spec|
             array.frameworks = 'Foundation'
         end
                 
-        # NSArray
+        # NSString
         category.subspec 'NSString' do |string|
             string.source_files = 'YTDevelopTools/Category/NSString/*.{h,m}'
-            string.frameworks = 'Foundation'
+            string.frameworks = 'Foundation', 'UIKit'
+        end
+                        
+        # NSDate
+        category.subspec 'NSDate' do |date|
+            date.source_files = 'YTDevelopTools/Category/NSDate/*.{h,m}'
+            date.frameworks = 'Foundation'
         end
 
     end
@@ -127,6 +133,12 @@ Pod::Spec.new do |spec|
         design.subspec 'BezierDrawPath' do |bezierDrawPath|
             bezierDrawPath.source_files = 'YTDevelopTools/UIDesign/BezierDrawPath/*.{h,m}'
             bezierDrawPath.frameworks = 'UIKit'
+        end
+        
+        # PickerView
+        design.subspec 'PickerView' do |pickerView|
+            pickerView.source_files = 'YTDevelopTools/UIDesign/PickerView/*.{h,m}'
+            pickerView.frameworks = 'UIKit'
         end
 
     end

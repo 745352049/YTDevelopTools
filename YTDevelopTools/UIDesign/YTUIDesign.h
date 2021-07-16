@@ -13,6 +13,8 @@
 #import <YTDevelopTools/YTRotatingView.h>
 #import <YTDevelopTools/YTRotatingImageView.h>
 #import <YTDevelopTools/YTBezierDrawView.h>
+#import <YTDevelopTools/YTDatePickerView.h>
+#import <YTDevelopTools/YTSinglePickerView.h>
 
 #else
 
@@ -22,6 +24,8 @@
 #import "YTRotatingView.h"
 #import "YTRotatingImageView.h"
 #import "YTBezierDrawView.h"
+#import "YTDatePickerView.h"
+#import "YTSinglePickerView.h"
 
 #endif
 
