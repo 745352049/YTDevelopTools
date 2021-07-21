@@ -33,17 +33,14 @@ typedef void(^YTAlertClickBlock)(NSInteger index);
 
  */
 
-/**
- 系统弹框
-
- @param title title
- @param message message
- @param preferredStyle 弹框风格
- @param actionTitles 按钮标题数组
- @param actionStyles 按钮风格数组
- @param controller 弹框所在控制器
- @param alertClickBlock 回调
- */
+/// 系统弹框
+/// @param title title
+/// @param message message
+/// @param preferredStyle 弹框风格
+/// @param actionTitles 按钮标题数组
+/// @param actionStyles 按钮风格数组
+/// @param controller 弹框所在控制器
+/// @param alertClickBlock 回调
 + (void)alertWithTitle:(NSString *_Nullable)title
                Message:(NSString *_Nullable)message
         PreferredStyle:(UIAlertControllerStyle)preferredStyle

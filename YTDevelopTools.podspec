@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.3.3"
+    spec.version      = "1.3.4"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -79,6 +79,12 @@ Pod::Spec.new do |spec|
         category.subspec 'NSDate' do |date|
             date.source_files = 'YTDevelopTools/Category/NSDate/*.{h,m}'
             date.frameworks = 'Foundation'
+        end
+        
+        # NSObject
+        category.subspec 'NSObject' do |object|
+            object.source_files = 'YTDevelopTools/Category/NSObject/*.{h,m}'
+            object.frameworks = 'Foundation'
         end
 
     end
