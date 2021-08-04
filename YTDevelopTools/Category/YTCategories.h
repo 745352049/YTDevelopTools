@@ -19,6 +19,8 @@
 
 #import <YTDevelopTools/NSString+YTCheck.h>
 #import <YTDevelopTools/NSString+YTSize.h>
+#import <YTDevelopTools/NSString+YTDevicePlatform.h>
+#import <YTDevelopTools/NSString+YTMD5Encrypt.h>
 
 #import <YTDevelopTools/NSDateFormatter+YTFormatter.h>
 
@@ -41,6 +43,8 @@
 
 #import "NSString+YTCheck.h"
 #import "NSString+YTSize.h"
+#import "NSString+YTDevicePlatform.h"
+#import "NSString+YTMD5Encrypt.h"
 
 #import "NSDateFormatter+YTFormatter.h"
 

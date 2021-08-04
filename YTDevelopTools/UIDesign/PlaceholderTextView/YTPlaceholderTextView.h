@@ -14,6 +14,7 @@ typedef void(^didChangeText)(YTPlaceholderTextView *textView);
 
 @property (nonatomic,   copy) NSString *placeholder;
 @property (nonatomic,   copy) UIColor *placeholderColor;
+@property (nonatomic, strong) UILabel *placeholderLabel;
 @property (nonatomic, assign) NSInteger maxCount;
 @property (nonatomic,   copy) didChangeText didChangeText;
 

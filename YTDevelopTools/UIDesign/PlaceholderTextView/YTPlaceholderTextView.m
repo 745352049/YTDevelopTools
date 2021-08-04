@@ -6,8 +6,6 @@
 
 @interface YTPlaceholderTextView ()
 
-@property (nonatomic, strong) UILabel *placeholderLabel;
-
 @end
 
 @implementation YTPlaceholderTextView

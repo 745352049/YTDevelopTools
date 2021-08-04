@@ -25,6 +25,8 @@
 		BE25D40726A18F2600FF0C34 /* YTDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE25D40426A18F2600FF0C34 /* YTDatePickerView.m */; };
 		BE25D40A26A6A3D100FF0C34 /* NSObject+YTRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = BE25D40926A6A3D100FF0C34 /* NSObject+YTRandom.m */; };
 		BE25D41526A7CE1900FF0C34 /* UIImage+YTQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = BE25D41326A7CE1900FF0C34 /* UIImage+YTQRCode.m */; };
+		BE25D42026BA311600FF0C34 /* NSString+YTDevicePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = BE25D41C26BA311600FF0C34 /* NSString+YTDevicePlatform.m */; };
+		BE25D42126BA311600FF0C34 /* NSString+YTMD5Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = BE25D41F26BA311600FF0C34 /* NSString+YTMD5Encrypt.m */; };
 		BEC992A7267C6F54004E430F /* YTCodeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC992A6267C6F54004E430F /* YTCodeFactory.m */; };
 		BEC992BA267C828C004E430F /* UILabel+YTFastLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC992B8267C828C004E430F /* UILabel+YTFastLabel.m */; };
 		D51583E524C5660A00A783B0 /* YTBezierDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = D51583E324C5660A00A783B0 /* YTBezierDrawView.m */; };
@@ -92,6 +94,10 @@
 		BE25D40926A6A3D100FF0C34 /* NSObject+YTRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YTRandom.m"; sourceTree = "<group>"; };
 		BE25D41326A7CE1900FF0C34 /* UIImage+YTQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTQRCode.m"; sourceTree = "<group>"; };
 		BE25D41426A7CE1900FF0C34 /* UIImage+YTQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTQRCode.h"; sourceTree = "<group>"; };
+		BE25D41C26BA311600FF0C34 /* NSString+YTDevicePlatform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTDevicePlatform.m"; sourceTree = "<group>"; };
+		BE25D41D26BA311600FF0C34 /* NSString+YTMD5Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTMD5Encrypt.h"; sourceTree = "<group>"; };
+		BE25D41E26BA311600FF0C34 /* NSString+YTDevicePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTDevicePlatform.h"; sourceTree = "<group>"; };
+		BE25D41F26BA311600FF0C34 /* NSString+YTMD5Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTMD5Encrypt.m"; sourceTree = "<group>"; };
 		BE5981872672177E00999E64 /* YTUIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTUIDesign.h; sourceTree = "<group>"; };
 		BE8E34F32660B5A10056FAF8 /* YTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCategories.h; sourceTree = "<group>"; };
 		BE8E34FA2660B7C80056FAF8 /* YTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExtension.h; sourceTree = "<group>"; };
@@ -258,6 +264,10 @@
 		BE0CB18726A143FF0085F815 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				BE25D41E26BA311600FF0C34 /* NSString+YTDevicePlatform.h */,
+				BE25D41C26BA311600FF0C34 /* NSString+YTDevicePlatform.m */,
+				BE25D41D26BA311600FF0C34 /* NSString+YTMD5Encrypt.h */,
+				BE25D41F26BA311600FF0C34 /* NSString+YTMD5Encrypt.m */,
 				BE0CB18826A144120085F815 /* NSString+YTCheck.h */,
 				BE0CB18926A144120085F815 /* NSString+YTCheck.m */,
 				BE0CB19026A16E430085F815 /* NSString+YTSize.h */,
@@ -501,7 +511,9 @@
 				BE25D41526A7CE1900FF0C34 /* UIImage+YTQRCode.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
 				BE25D40626A18F2600FF0C34 /* YTSinglePickerView.m in Sources */,
+				BE25D42026BA311600FF0C34 /* NSString+YTDevicePlatform.m in Sources */,
 				D51583E624C5660A00A783B0 /* YTBezierDrawPath.m in Sources */,
+				BE25D42126BA311600FF0C34 /* NSString+YTMD5Encrypt.m in Sources */,
 				7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */,
 				BE25D40726A18F2600FF0C34 /* YTDatePickerView.m in Sources */,
 				BEC992BA267C828C004E430F /* UILabel+YTFastLabel.m in Sources */,
