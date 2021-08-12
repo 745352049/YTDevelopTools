@@ -5,11 +5,13 @@
 #if __has_include(<YTDevelopTools/YTCategories.h>)
 
 #import <YTDevelopTools/UIColor+YTAdapter.h>
+#import <YTDevelopTools/UIColor+YTColor.h>
 
 #import <YTDevelopTools/NSBundle+YTBundle.h>
 
 #import <YTDevelopTools/UIImage+YTWaterMark.h>
 #import <YTDevelopTools/UIImage+YTQRCode.h>
+#import <YTDevelopTools/UIImage+YTScale.h>
 
 #import <YTDevelopTools/UILabel+YTFastLabel.h>
 
@@ -29,11 +31,13 @@
 #else
 
 #import "UIColor+YTAdapter.h"
+#import "UIColor+YTColor.h"
 
 #import "NSBundle+YTBundle.h"
 
 #import "UIImage+YTWaterMark.h"
 #import "UIImage+YTQRCode.h"
+#import "UIImage+YTScale.h"
 
 #import "UILabel+YTFastLabel.h"
 

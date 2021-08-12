@@ -6,7 +6,7 @@
 
 @implementation NSString (YTDevicePlatform)
 
-- (NSString *)getDevicePlatform {
++ (NSString *)getDevicePlatform {
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *platform = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
