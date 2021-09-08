@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.3.6"
+    spec.version      = "1.3.7"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -61,6 +61,12 @@ Pod::Spec.new do |spec|
         category.subspec 'UIView' do |view|
             view.source_files = 'YTDevelopTools/Category/UIView/*.{h,m}'
             view.frameworks = 'UIKit'
+        end
+        
+        #UIButton
+        category.subspec 'UIButton' do |button|
+            button.source_files = 'YTDevelopTools/Category/UIButton/*.{h,m}'
+            button.frameworks = 'UIKit'
         end
         
         # NSArray

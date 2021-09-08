@@ -17,6 +17,8 @@
 
 #import <YTDevelopTools/UIView+YTShadowCorner.h>
 
+#import <YTDevelopTools/UIButton+YTShadowCorner.h>
+
 #import <YTDevelopTools/NSArray+YTSafe.h>
 
 #import <YTDevelopTools/NSString+YTCheck.h>
@@ -42,6 +44,8 @@
 #import "UILabel+YTFastLabel.h"
 
 #import "UIView+YTShadowCorner.h"
+
+#import "UIButton+YTShadowCorner.h"
 
 #import "NSArray+YTSafe.h"
 
