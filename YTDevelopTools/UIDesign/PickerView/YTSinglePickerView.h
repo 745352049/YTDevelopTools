@@ -4,7 +4,7 @@
 
 #import "YTPickerBaseView.h"
 
-typedef void(^YTResultBlock)(NSString *selectValue);
+typedef void(^YTResultBlock)(UIPickerView *pickerView, NSString *selectValue);
 
 @interface YTSinglePickerView : YTPickerBaseView
 

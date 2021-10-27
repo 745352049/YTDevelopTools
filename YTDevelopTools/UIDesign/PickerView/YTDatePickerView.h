@@ -4,7 +4,7 @@
 
 #import "YTPickerBaseView.h"
 
-typedef void(^YTDateResultBlock)(NSString *selectValue);
+typedef void(^YTDateResultBlock)(UIDatePicker *datePicker, NSString *selectValue);
 
 @interface YTDatePickerView : YTPickerBaseView
 

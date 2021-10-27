@@ -95,7 +95,7 @@
     _selectValue = [self toStringWithDate:sender.date];
     if (_isAutoSelect) {
         if (_resultBlock) {
-            _resultBlock(_selectValue);
+            _resultBlock(self.datePicker, _selectValue);
         }
     }
 }
@@ -105,7 +105,7 @@
 - (void)doneBtnAction {
     [self dismissWithAnimation:YES];
     if (_resultBlock) {
-        _resultBlock(_selectValue);
+        _resultBlock(self.datePicker, _selectValue);
     }
 }
 

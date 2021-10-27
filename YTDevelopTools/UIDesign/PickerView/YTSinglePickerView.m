@@ -71,7 +71,7 @@
     [self dismissWithAnimation:YES];
     if (_resultBlock) {
         _selectValue = [_singleArray objectAtIndex:[self.pickerView selectedRowInComponent:0]];
-        _resultBlock(_selectValue);
+        _resultBlock(self.pickerView, _selectValue);
     }
 }
 
@@ -151,7 +151,7 @@
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     if (_isAutoSelect) {
         if (_resultBlock) {
-            _resultBlock(_singleArray[row]);
+            _resultBlock(self.pickerView, _selectValue);
         }
     }
 }
