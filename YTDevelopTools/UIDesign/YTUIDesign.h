@@ -15,6 +15,7 @@
 #import <YTDevelopTools/YTBezierDrawView.h>
 #import <YTDevelopTools/YTDatePickerView.h>
 #import <YTDevelopTools/YTSinglePickerView.h>
+#import <YTDevelopTools/LicensePlateKeyboardView.h>
 
 #else
 
@@ -26,6 +27,7 @@
 #import "YTBezierDrawView.h"
 #import "YTDatePickerView.h"
 #import "YTSinglePickerView.h"
+#import "LicensePlateKeyboardView.h"
 
 #endif
 
