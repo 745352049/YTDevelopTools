@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LicensePlateKeyboardConfig : NSObject
 
+- (NSString *)getPlateNumberFilePath;
+
+- (NSString *)getPlateProvinceFilePath;
+
 @property (nonatomic, assign) CGFloat itemSpace;
 @property (nonatomic, assign) NSInteger rowCount;
 @property (nonatomic, assign) BOOL addDone;

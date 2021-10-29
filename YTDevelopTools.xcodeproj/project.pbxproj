@@ -114,7 +114,7 @@
 		BE25D41F26BA311600FF0C34 /* NSString+YTMD5Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTMD5Encrypt.m"; sourceTree = "<group>"; };
 		BE57E2B126E8B4CC00732D44 /* UIButton+YTShadowCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YTShadowCorner.h"; sourceTree = "<group>"; };
 		BE57E2B226E8B4CC00732D44 /* UIButton+YTShadowCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YTShadowCorner.m"; sourceTree = "<group>"; };
-		BE5981872672177E00999E64 /* YTUIDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTUIDesign.h; sourceTree = "<group>"; };
+		BE5981872672177E00999E64 /* YTViewControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTViewControl.h; sourceTree = "<group>"; };
 		BE8E34F32660B5A10056FAF8 /* YTCategories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTCategories.h; sourceTree = "<group>"; };
 		BE8E34FA2660B7C80056FAF8 /* YTExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTExtension.h; sourceTree = "<group>"; };
 		BEC992A2267C6837004E430F /* YTDeviceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTDeviceHeader.h; sourceTree = "<group>"; };
@@ -131,7 +131,6 @@
 		BEF636F2272AE6390093F898 /* YTHorizontalCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTHorizontalCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		BEF636F3272AE6390093F898 /* LicensePlateKeyboardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensePlateKeyboardConfig.h; sourceTree = "<group>"; };
 		BEF636F4272AE6390093F898 /* LicensePlateKeyboardModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensePlateKeyboardModel.h; sourceTree = "<group>"; };
-		BEF636F5272AE6390093F898 /* LicensePlateKeyboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LicensePlateKeyboardCell.xib; sourceTree = "<group>"; };
 		BEF636F7272AE6390093F898 /* LicensePlateKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensePlateKeyboardView.h; sourceTree = "<group>"; };
 		BEF636F9272AE6390093F898 /* LicensePlateKeyboardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LicensePlateKeyboardCell.h; sourceTree = "<group>"; };
 		BEF636FC272AE6390093F898 /* LicensePlateKeyboardConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LicensePlateKeyboardConfig.m; sourceTree = "<group>"; };
@@ -268,7 +267,7 @@
 				7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */,
 				7A5945D82472373300E3EAC3 /* Category */,
 				7A4B95FD246E34AB002FBE60 /* Extension */,
-				D53852B824A1C1280058827F /* UIDesign */,
+				D53852B824A1C1280058827F /* ViewControl */,
 				048F106B265C96C100CCE359 /* PermissionTool */,
 				BEC992A1267C6824004E430F /* MacrosHeader */,
 			);
@@ -487,15 +486,14 @@
 				BEF636FD272AE6390093F898 /* YTHorizontalCollectionViewFlowLayout.m */,
 				BEF636F9272AE6390093F898 /* LicensePlateKeyboardCell.h */,
 				BEF636F1272AE6390093F898 /* LicensePlateKeyboardCell.m */,
-				BEF636F5272AE6390093F898 /* LicensePlateKeyboardCell.xib */,
 			);
 			path = LicensePlateKeyboardView;
 			sourceTree = "<group>";
 		};
-		D53852B824A1C1280058827F /* UIDesign */ = {
+		D53852B824A1C1280058827F /* ViewControl */ = {
 			isa = PBXGroup;
 			children = (
-				BE5981872672177E00999E64 /* YTUIDesign.h */,
+				BE5981872672177E00999E64 /* YTViewControl.h */,
 				BEF636EF272AE6390093F898 /* LicensePlateKeyboardView */,
 				BE25D3FE26A18F2600FF0C34 /* PickerView */,
 				BE5981862672173200999E64 /* KeyBoardTextField */,
@@ -504,7 +502,7 @@
 				BE598183267216DE00999E64 /* RotatingView */,
 				BE598181267216BC00999E64 /* BezierDrawPath */,
 			);
-			path = UIDesign;
+			path = ViewControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

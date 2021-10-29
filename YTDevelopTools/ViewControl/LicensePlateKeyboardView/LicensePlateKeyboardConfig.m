@@ -29,6 +29,14 @@
     return self;
 }
 
+- (NSString *)getPlateNumberFilePath {
+    return [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateNumber" ofType:@"json"];
+}
+
+- (NSString *)getPlateProvinceFilePath {
+    return [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateProvince" ofType:@"json"];
+}
+
 #pragma mark - Set
 
 - (void)setItemSpace:(CGFloat)itemSpace {

@@ -19,7 +19,7 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import <YTDevelopTools/YTPermissionTool.h>
 
-#import <YTDevelopTools/YTUIDesign.h>
+#import <YTDevelopTools/YTViewControl.h>
 
 #import <YTDevelopTools/YTMacrosHeader.h>
 
@@ -31,7 +31,7 @@ FOUNDATION_EXPORT const unsigned char YTDevelopToolsVersionString[];
 
 #import "YTPermissionTool.h"
 
-#import "YTUIDesign.h"
+#import "YTViewControl.h"
 
 #import "YTMacrosHeader.h"
 
