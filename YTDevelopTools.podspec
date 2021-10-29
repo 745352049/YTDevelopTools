@@ -154,7 +154,7 @@ Pod::Spec.new do |spec|
         end
         
         # LicensePlateKeyboardView
-        design.subspec 'plateKeyboardView' do |LicensePlateKeyboardView|
+        design.subspec 'LicensePlateKeyboardView' do |plateKeyboardView|
             plateKeyboardView.source_files = 'YTDevelopTools/UIDesign/LicensePlateKeyboardView/*.{h,m}'
             plateKeyboardView.frameworks = 'UIKit'
         end
