@@ -39,6 +39,12 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 /// 导航栏 + 状态栏 高度
 #define UI_NavBar_Height UI_Statusbar_Height > 20.0 ? 88.0 : 64.0
 
+/// 导航栏高度
+#define UI_Navigation_Height (UI_NavBar_Height-UI_Statusbar_Height)
+
+/// Tabbar高度
+#define UI_Tabbar_Height (UI_Statusbar_Height > 20.0 ? 83.0 : 49.0)
+
 /// 曲面屏底部安全区域高度
 #define UI_SafeArea_Height UI_Statusbar_Height > 20.0 ? 34.0 : 0.0
 
@@ -73,9 +79,17 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 #define IS_IPHONE_12_Pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
 /// 判断iPhone 12 Pro Max
 #define IS_IPHONE_12_Pro_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+/// 判断iPhone 13
+#define IS_IPHONE_13 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+/// 判断iPhone 13 Mini
+#define IS_IPHONE_13_Mini ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1080, 2340), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+/// 判断iPhone 13 Pro
+#define IS_IPHONE_13_Pro ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1170, 2532), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
+/// 判断iPhone 13 Pro Max
+#define IS_IPHONE_13_Pro_Max ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1284, 2778), [[UIScreen mainScreen] currentMode].size) && !UI_IS_IPAD : NO)
 
 /// 是否是曲面屏
-#define UI_IPHONE_X_More (IS_IPHONE_X == YES || IS_IPHONE_Xr == YES || IS_IPHONE_Xs == YES || IS_IPHONE_Xs_Max == YES || IS_IPHONE_11 == YES || IS_IPHONE_11_Pro == YES || IS_IPHONE_11_Pro_Max == YES || IS_IPHONE_12 == YES || IS_IPHONE_12_Mini == YES || IS_IPHONE_12_Pro == YES || IS_IPHONE_12_Pro_Max == YES)
+#define UI_IPHONE_X_Or_More (IS_IPHONE_X == YES || IS_IPHONE_Xr == YES || IS_IPHONE_Xs == YES || IS_IPHONE_Xs_Max == YES || IS_IPHONE_11 == YES || IS_IPHONE_11_Pro == YES || IS_IPHONE_11_Pro_Max == YES || IS_IPHONE_12 == YES || IS_IPHONE_12_Mini == YES || IS_IPHONE_12_Pro == YES || IS_IPHONE_12_Pro_Max == YES || IS_IPHONE_13 == YES || IS_IPHONE_13_Mini == YES || IS_IPHONE_13_Pro == YES || IS_IPHONE_13_Pro_Max == YES)
 
 /// 判断屏幕方向是否是竖屏
 #define judgeDeviceOrientationLandscapeHorizontal() \

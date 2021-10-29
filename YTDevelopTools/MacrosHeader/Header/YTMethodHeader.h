@@ -12,6 +12,13 @@
 #define YTLog(...)
 #endif
 
+/// NSLog打印宏
+#ifdef DEBUG
+#define LongLog(format, ...) printf("👉 %s 👈", [[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String])
+#else
+#define LongLog(...)
+#endif
+
 /// 弱引用
 #ifndef weakify
 #if DEBUG
@@ -55,10 +62,27 @@
 /// 颜色
 #define ColorWith(Red, Green, Blue, Alpha) [UIColor colorWithRed:Red/255.0 green:Green/255.0 blue:Blue/255.0 alpha:Alpha]
 
+/// 颜色
+#define ColorAlphaWith(Red, Green, Blue, Alpha) [UIColor colorWithRed:Red/255.0 green:Green/255.0 blue:Blue/255.0 alpha:Alpha]
+
+/// 颜色
+#define ColorWithRGBHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+/// NSUserDefaults
+#define userDefaults [NSUserDefaults standardUserDefaults]
+
+/// NSNotificationCenter
+#define notificationCenter [NSNotificationCenter defaultCenter]
+
 /// 图片
 #define ImageNamed(imageString) [UIImage imageNamed:imageString]
 
 /// 字体
 #define FontSize(size) [UIFont systemFontOfSize:size]
+
+#define BoldFontSize(size) [UIFont boldSystemFontOfSize:size]
+
+/// UIStoryboard
+#define StoryboardWith(Name) [UIStoryboard storyboardWithName:Name bundle:[NSBundle mainBundle]]
 
 #endif /* YTMethodHeader_h */
