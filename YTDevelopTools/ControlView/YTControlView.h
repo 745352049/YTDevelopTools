@@ -1,11 +1,11 @@
 //
-//  YTUIDesign.h
+//  YTControlView.h
 //  
 
-#ifndef YTUIDesign_h
-#define YTUIDesign_h
+#ifndef YTControlView_h
+#define YTControlView_h
 
-#if __has_include(<YTDevelopTools/YTUIDesign.h>)
+#if __has_include(<YTDevelopTools/YTControlView.h>)
 
 #import <YTDevelopTools/YTKeyBoardTextField.h>
 #import <YTDevelopTools/YTAssistiveTouchView.h>
@@ -31,4 +31,4 @@
 
 #endif
 
-#endif /* YTUIDesign_h */
+#endif /* YTControlView_h */

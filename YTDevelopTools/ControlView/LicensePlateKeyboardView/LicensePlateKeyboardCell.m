@@ -37,11 +37,11 @@
     }
     
     if (model.isDelete == YES) {
-        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateKeyboardDel@2x" ofType:@"png"]];
+        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDel@2x" ofType:@"png"]];
     }
     
     if (model.isDone == YES) {
-        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateKeyboardDis@2x" ofType:@"png"]];
+        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDis@2x" ofType:@"png"]];
     }
 }
 

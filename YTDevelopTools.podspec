@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.4.0"
+    spec.version      = "1.4.1"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
     spec.public_header_files = 'YTDevelopTools/YTDevelopTools.h'
     spec.source_files = 'YTDevelopTools/YTDevelopTools.h'
-    spec.resources    = 'YTDevelopTools/*.{png,bundle}'
+    spec.resources    = 'YTDevelopTools/*.{png,bundle,xib,json}'
 
     spec.requires_arc = true
     spec.platform     = :ios, "9.0"
@@ -111,51 +111,51 @@ Pod::Spec.new do |spec|
     end
 
 
-    # ViewControl
-    spec.subspec 'ViewControl' do |viewControl|
+    # ControlView
+    spec.subspec 'ControlView' do |controlView|
     
-        viewControl.public_header_files = 'YTDevelopTools/ViewControl/YTViewControl.h'
-        viewControl.source_files = 'YTDevelopTools/ViewControl/YTViewControl.h'
+        controlView.public_header_files = 'YTDevelopTools/ControlView/YTControlView.h'
+        controlView.source_files = 'YTDevelopTools/ControlView/YTControlView.h'
         
         # KeyBoardTextField
-        viewControl.subspec 'KeyBoardTextField' do |keyBoardTextField|
-            keyBoardTextField.source_files = 'YTDevelopTools/ViewControl/KeyBoardTextField/*.{h,m}'
+        controlView.subspec 'KeyBoardTextField' do |keyBoardTextField|
+            keyBoardTextField.source_files = 'YTDevelopTools/ControlView/KeyBoardTextField/*.{h,m}'
             keyBoardTextField.frameworks = 'UIKit'
         end
         
         # AssistiveTouchView
-        viewControl.subspec 'AssistiveTouchView' do |assistiveTouchView|
-            assistiveTouchView.source_files = 'YTDevelopTools/ViewControl/AssistiveTouchView/*.{h,m}'
+        controlView.subspec 'AssistiveTouchView' do |assistiveTouchView|
+            assistiveTouchView.source_files = 'YTDevelopTools/ControlView/AssistiveTouchView/*.{h,m}'
             assistiveTouchView.frameworks = 'UIKit'
         end
         
         # PlaceholderTextView
-        viewControl.subspec 'PlaceholderTextView' do |placeholderTextView|
-            placeholderTextView.source_files = 'YTDevelopTools/ViewControl/PlaceholderTextView/*.{h,m}'
+        controlView.subspec 'PlaceholderTextView' do |placeholderTextView|
+            placeholderTextView.source_files = 'YTDevelopTools/ControlView/PlaceholderTextView/*.{h,m}'
             placeholderTextView.frameworks = 'UIKit'
         end
         
         # RotatingView
-        viewControl.subspec 'RotatingView' do |rotatingView|
-            rotatingView.source_files = 'YTDevelopTools/ViewControl/RotatingView/*.{h,m}'
+        controlView.subspec 'RotatingView' do |rotatingView|
+            rotatingView.source_files = 'YTDevelopTools/ControlView/RotatingView/*.{h,m}'
             rotatingView.frameworks = 'UIKit'
         end
         
         # BezierDrawPath
-        viewControl.subspec 'BezierDrawPath' do |bezierDrawPath|
-            bezierDrawPath.source_files = 'YTDevelopTools/ViewControl/BezierDrawPath/*.{h,m}'
+        controlView.subspec 'BezierDrawPath' do |bezierDrawPath|
+            bezierDrawPath.source_files = 'YTDevelopTools/ControlView/BezierDrawPath/*.{h,m}'
             bezierDrawPath.frameworks = 'UIKit'
         end
         
         # PickerView
-        viewControl.subspec 'PickerView' do |pickerView|
-            pickerView.source_files = 'YTDevelopTools/ViewControl/PickerView/*.{h,m}'
+        controlView.subspec 'PickerView' do |pickerView|
+            pickerView.source_files = 'YTDevelopTools/ControlView/PickerView/*.{h,m}'
             pickerView.frameworks = 'UIKit'
         end
         
         # LicensePlateKeyboardView
-        viewControl.subspec 'LicensePlateKeyboardView' do |plateKeyboardView|
-            plateKeyboardView.source_files = 'YTDevelopTools/ViewControl/LicensePlateKeyboardView/*.{h,m}'
+        controlView.subspec 'LicensePlateKeyboardView' do |plateKeyboardView|
+            plateKeyboardView.source_files = 'YTDevelopTools/ControlView/LicensePlateKeyboardView/*.{h,m}'
             plateKeyboardView.frameworks = 'UIKit'
         end
 

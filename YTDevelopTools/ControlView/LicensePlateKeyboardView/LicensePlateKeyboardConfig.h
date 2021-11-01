@@ -1,9 +1,6 @@
 //
 //  LicensePlateKeyboardConfig.h
-//  YANTING
-//
-//  Created by MAC on 2021/9/30.
-//
+//  
 
 #import <UIKit/UIKit.h>
 
@@ -12,6 +9,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #define LicensePlateScreenWidth [UIScreen mainScreen].bounds.size.width
+#define YTDevelopBundle [NSBundle bundleWithIdentifier:@"org.cocoapods.YTDevelopTools"]
+#define YTDevelopBundleURL [YTDevelopBundle URLForResource:@"YTDevelopTools" withExtension:@"bundle"]
 
 @interface LicensePlateKeyboardConfig : NSObject
 

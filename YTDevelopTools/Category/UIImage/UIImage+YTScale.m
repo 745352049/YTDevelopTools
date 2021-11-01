@@ -6,8 +6,55 @@
 
 @implementation UIImage (YTScale)
 
+- (BOOL)isHaveAlpha {
+    CGImageAlphaInfo alpha = CGImageGetAlphaInfo(self.CGImage);
+    return (alpha == kCGImageAlphaFirst ||
+            alpha == kCGImageAlphaLast ||
+            alpha == kCGImageAlphaPremultipliedFirst ||
+            alpha == kCGImageAlphaPremultipliedLast);
+}
+
+- (NSString *)base64Encoding {
+    NSData *imageData = UIImageJPEGRepresentation(self, 1.0f);
+    return [NSString stringWithFormat:@"%@", [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength]];
+}
+
+- (UIColor *)colorWithPoint:(CGPoint)point {
+    CFDataRef pixelData = CGDataProviderCopyData(CGImageGetDataProvider(self.CGImage));
+    const UInt8 *data = CFDataGetBytePtr(pixelData);
+    NSUInteger width = self.size.width;
+    int pixelInfo = ((width * point.y) + point.x) * 4;
+    
+    CGFloat red = (CGFloat)data[pixelInfo] / 255.0f;
+    CGFloat green = (CGFloat)data[pixelInfo + 1] / 255.0f;
+    CGFloat blue = (CGFloat)data[pixelInfo + 2] / 255.0f;
+    CGFloat alpha = (CGFloat)data[pixelInfo + 3] / 255.0f;
+    
+    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+}
+
+- (UIImage *)imageWithAlwaysOriginalMode {
+    return [self imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 + (UIImage *)imageFromURLString:(NSString *)urlstring {
     return [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:urlstring]]];
+}
+
++ (UIImage *)stretchableCenterWithImageStr:(NSString *)imageStr {
+    return [[UIImage imageNamed:imageStr] stretchableCenter];
+}
+
++ (UIImage *)stretchableWithImageStr:(NSString *)imageStr leftCap:(CGFloat)leftCap topCap:(CGFloat)topCap {
+    return [[UIImage imageNamed:imageStr] stretchableLeftCap:leftCap topCap:topCap];
+}
+
+- (UIImage *)stretchableCenter {
+    return [self stretchableImageWithLeftCapWidth:self.size.width*0.5 topCapHeight:self.size.height*0.5];
+}
+
+- (UIImage *)stretchableLeftCap:(CGFloat)leftCap topCap:(CGFloat)topCap {
+    return [self stretchableImageWithLeftCapWidth:self.size.width*leftCap topCapHeight:self.size.height*topCap];
 }
 
 + (UIImage *)scaleImageNamed:(NSString *)image TargetWidth:(CGFloat)defineWidth {

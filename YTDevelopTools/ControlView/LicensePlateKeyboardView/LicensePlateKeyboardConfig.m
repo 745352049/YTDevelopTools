@@ -1,9 +1,6 @@
 //
 //  LicensePlateKeyboardConfig.m
-//  YANTING
-//
-//  Created by MAC on 2021/9/30.
-//
+//  
 
 #import "LicensePlateKeyboardConfig.h"
 
@@ -30,11 +27,11 @@
 }
 
 - (NSString *)getPlateNumberFilePath {
-    return [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateNumber" ofType:@"json"];
+    return [[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateNumber" ofType:@"json"];
 }
 
 - (NSString *)getPlateProvinceFilePath {
-    return [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"YTDevelopTools" withExtension:@"bundle"]] pathForResource:@"LicensePlateProvince" ofType:@"json"];
+    return [[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateProvince" ofType:@"json"];
 }
 
 #pragma mark - Set

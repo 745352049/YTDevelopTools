@@ -5,6 +5,7 @@
 #import <UIKit/UIKit.h>
 
 #import "LicensePlateKeyboardModel.h"
+#import "LicensePlateKeyboardConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
