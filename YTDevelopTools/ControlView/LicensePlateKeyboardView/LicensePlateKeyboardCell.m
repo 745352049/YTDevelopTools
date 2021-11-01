@@ -6,17 +6,22 @@
 
 @interface LicensePlateKeyboardCell ()
 
-@property (weak, nonatomic) IBOutlet UIView *bgView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UIImageView *deleteImageV;
+@property (nonatomic, strong) UIView *bgView;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIImageView *deleteImageV;
 
 @end
 
 @implementation LicensePlateKeyboardCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)layoutSubviews {
+    [self.contentView addSubview:self.bgView];
+    [self.bgView addSubview:self.titleLabel];
+    [self.bgView addSubview:self.deleteImageV];
+    
+    self.bgView.frame = CGRectMake(0, 0, CGRectGetWidth(self.contentView.frame), CGRectGetHeight(self.contentView.frame));
+    self.titleLabel.frame = self.bgView.bounds;
+    self.deleteImageV.frame = self.bgView.bounds;
     
     self.bgView.layer.cornerRadius = 6.0;
 }
@@ -43,6 +48,32 @@
     if (model.isDone == YES) {
         self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDis@2x" ofType:@"png"]];
     }
+}
+
+- (UIImageView *)deleteImageV {
+    if (!_deleteImageV) {
+        _deleteImageV = [[UIImageView alloc] init];
+        _deleteImageV.contentMode = UIViewContentModeCenter;
+    }
+    return _deleteImageV;
+}
+
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.textColor = [UIColor blackColor];
+    }
+    return _titleLabel;
+}
+
+- (UIView *)bgView {
+    if (!_bgView) {
+        _bgView = [[UIView alloc] init];
+        _bgView.backgroundColor = [UIColor whiteColor];
+    }
+    return _bgView;
 }
 
 @end

@@ -57,7 +57,7 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
     collectRect.size.height = height;
     self.collectionView.frame = collectRect;
     
-    [self.collectionView registerNib:[UINib nibWithNibName:@"LicensePlateKeyboardCell" bundle:[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"YTDevelopTools" ofType:@"bundle"]]] forCellWithReuseIdentifier:@"LicensePlateKeyboardCell"];
+    [self.collectionView registerClass:[LicensePlateKeyboardCell class] forCellWithReuseIdentifier:@"LicensePlateKeyboardCell"];
     [self addSubview:self.collectionView];
     [self.collectionView reloadData];
 }
