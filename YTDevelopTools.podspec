@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.4.2"
+    spec.version      = "1.4.3"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -106,6 +106,12 @@ Pod::Spec.new do |spec|
         extension.subspec 'NSObject' do |object|
             object.source_files = 'YTDevelopTools/Extension/NSObject/*.{h,m}'
             object.frameworks = 'UIKit'
+        end
+        
+        # UILabel
+        extension.subspec 'UILabel' do |label|
+            label.source_files = 'YTDevelopTools/Extension/UILabel/*.{h,m}'
+            label.frameworks = 'UIKit'
         end
 
     end

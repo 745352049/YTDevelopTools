@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04099D2C2762FAB7009EAFC3 /* CheckString.m in Sources */ = {isa = PBXBuildFile; fileRef = 04099D2B2762FAB7009EAFC3 /* CheckString.m */; };
+		04099D2F2762FFB3009EAFC3 /* NSString+YTCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 04099D2E2762FFB3009EAFC3 /* NSString+YTCheck.m */; };
+		04099D332763004C009EAFC3 /* UICopyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04099D312763004C009EAFC3 /* UICopyLabel.m */; };
 		047B2111272F9636004EA2B6 /* YTDevelopTools.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A67FA5B2472D45A001CD16E /* YTDevelopTools.bundle */; };
 		7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */; };
 		7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */; };
@@ -17,7 +20,6 @@
 		7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE23C78248F5ADC00D5C07F /* YTPlaceholderTextView.m */; };
 		BE0CB17A26A126F20085F815 /* UIView+YTShadowCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB17926A126F20085F815 /* UIView+YTShadowCorner.m */; };
 		BE0CB18326A12D300085F815 /* NSArray+YTSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB18226A12D300085F815 /* NSArray+YTSafe.m */; };
-		BE0CB18A26A144120085F815 /* NSString+YTCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB18926A144120085F815 /* NSString+YTCheck.m */; };
 		BE0CB18F26A16DAF0085F815 /* NSDateFormatter+YTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB18E26A16DAF0085F815 /* NSDateFormatter+YTFormatter.m */; };
 		BE0CB19226A16E430085F815 /* NSString+YTSize.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB19126A16E430085F815 /* NSString+YTSize.m */; };
 		BE122A2826C51F01003C65EA /* UIImage+YTScale.m in Sources */ = {isa = PBXBuildFile; fileRef = BE122A2726C51F01003C65EA /* UIImage+YTScale.m */; };
@@ -66,6 +68,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04099D2A2762FAB7009EAFC3 /* CheckString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckString.h; sourceTree = "<group>"; };
+		04099D2B2762FAB7009EAFC3 /* CheckString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckString.m; sourceTree = "<group>"; };
+		04099D2D2762FFB3009EAFC3 /* NSString+YTCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YTCheck.h"; sourceTree = "<group>"; };
+		04099D2E2762FFB3009EAFC3 /* NSString+YTCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTCheck.m"; sourceTree = "<group>"; };
+		04099D312763004C009EAFC3 /* UICopyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICopyLabel.m; sourceTree = "<group>"; };
+		04099D322763004C009EAFC3 /* UICopyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICopyLabel.h; sourceTree = "<group>"; };
 		049BF9AA265CB08300A73EDA /* YTPermissionTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTPermissionTool.h; sourceTree = "<group>"; };
 		7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTWaterMark.h"; sourceTree = "<group>"; };
 		7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTWaterMark.m"; sourceTree = "<group>"; };
@@ -88,8 +96,6 @@
 		BE0CB17C26A1295F0085F815 /* YTMethodHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YTMethodHeader.h; sourceTree = "<group>"; };
 		BE0CB18126A12D300085F815 /* NSArray+YTSafe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YTSafe.h"; sourceTree = "<group>"; };
 		BE0CB18226A12D300085F815 /* NSArray+YTSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YTSafe.m"; sourceTree = "<group>"; };
-		BE0CB18826A144120085F815 /* NSString+YTCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+YTCheck.h"; sourceTree = "<group>"; };
-		BE0CB18926A144120085F815 /* NSString+YTCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YTCheck.m"; sourceTree = "<group>"; };
 		BE0CB18D26A16DAF0085F815 /* NSDateFormatter+YTFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+YTFormatter.h"; sourceTree = "<group>"; };
 		BE0CB18E26A16DAF0085F815 /* NSDateFormatter+YTFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+YTFormatter.m"; sourceTree = "<group>"; };
 		BE0CB19026A16E430085F815 /* NSString+YTSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+YTSize.h"; sourceTree = "<group>"; };
@@ -169,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04099D302763003C009EAFC3 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				04099D322763004C009EAFC3 /* UICopyLabel.h */,
+				04099D312763004C009EAFC3 /* UICopyLabel.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		048F106B265C96C100CCE359 /* PermissionTool */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				BE8E34FA2660B7C80056FAF8 /* YTExtension.h */,
+				04099D302763003C009EAFC3 /* UILabel */,
 				BE8E34F92660B7AC0056FAF8 /* NSObject */,
 			);
 			path = Extension;
@@ -299,10 +315,10 @@
 				BE25D41C26BA311600FF0C34 /* NSString+YTDevicePlatform.m */,
 				BE25D41D26BA311600FF0C34 /* NSString+YTMD5Encrypt.h */,
 				BE25D41F26BA311600FF0C34 /* NSString+YTMD5Encrypt.m */,
-				BE0CB18826A144120085F815 /* NSString+YTCheck.h */,
-				BE0CB18926A144120085F815 /* NSString+YTCheck.m */,
 				BE0CB19026A16E430085F815 /* NSString+YTSize.h */,
 				BE0CB19126A16E430085F815 /* NSString+YTSize.m */,
+				04099D2D2762FFB3009EAFC3 /* NSString+YTCheck.h */,
+				04099D2E2762FFB3009EAFC3 /* NSString+YTCheck.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -443,6 +459,8 @@
 		BE8E34F92660B7AC0056FAF8 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
+				04099D2A2762FAB7009EAFC3 /* CheckString.h */,
+				04099D2B2762FAB7009EAFC3 /* CheckString.m */,
 				BEF636E9272AE57C0093F898 /* MapNavigator.h */,
 				BEF636EA272AE57C0093F898 /* MapNavigator.m */,
 				BEF636E8272AE57C0093F898 /* NSTimerProxy.h */,
@@ -564,12 +582,12 @@
 			files = (
 				BE122A2B26C51F71003C65EA /* UIColor+YTColor.m in Sources */,
 				BEF63702272AE6390093F898 /* YTHorizontalCollectionViewFlowLayout.m in Sources */,
-				BE0CB18A26A144120085F815 /* NSString+YTCheck.m in Sources */,
 				BEF636FF272AE6390093F898 /* LicensePlateKeyboardView.m in Sources */,
 				D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */,
 				D51583E524C5660A00A783B0 /* YTBezierDrawView.m in Sources */,
 				BEF63700272AE6390093F898 /* LicensePlateKeyboardCell.m in Sources */,
 				BE0CB18326A12D300085F815 /* NSArray+YTSafe.m in Sources */,
+				04099D332763004C009EAFC3 /* UICopyLabel.m in Sources */,
 				7AA45B60246D0874002D9801 /* YTSystemAlertController.m in Sources */,
 				BEF63703272AE6390093F898 /* LicensePlateKeyboardModel.m in Sources */,
 				D53852B724A1BF620058827F /* YTPermissionEventKit.m in Sources */,
@@ -582,6 +600,7 @@
 				7AE23C79248F5ADC00D5C07F /* YTPlaceholderTextView.m in Sources */,
 				BE25D41526A7CE1900FF0C34 /* UIImage+YTQRCode.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
+				04099D2F2762FFB3009EAFC3 /* NSString+YTCheck.m in Sources */,
 				BE25D40626A18F2600FF0C34 /* YTSinglePickerView.m in Sources */,
 				BE25D42026BA311600FF0C34 /* NSString+YTDevicePlatform.m in Sources */,
 				D51583E624C5660A00A783B0 /* YTBezierDrawPath.m in Sources */,
@@ -602,6 +621,7 @@
 				7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */,
 				BE25D40526A18F2600FF0C34 /* YTPickerBaseView.m in Sources */,
 				7A839C542473F86000AC49ED /* YTKeyBoardTextField.m in Sources */,
+				04099D2C2762FAB7009EAFC3 /* CheckString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
