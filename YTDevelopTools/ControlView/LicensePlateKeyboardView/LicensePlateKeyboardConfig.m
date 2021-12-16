@@ -18,6 +18,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        self.widthScale = 4.0/3.0;
         self.itemSpace = 8.0;
         self.rowCount = 10;
         self.addDone = YES;
@@ -36,6 +37,10 @@
 
 #pragma mark - Set
 
+- (void)setWidthScale:(CGFloat)widthScale {
+    _widthScale = widthScale;
+}
+
 - (void)setItemSpace:(CGFloat)itemSpace {
     _itemSpace = itemSpace;
 }
@@ -50,6 +55,14 @@
 
 - (void)setAddDelete:(BOOL)addDelete {
     _addDelete = addDelete;
+}
+
+- (void)setDoneImage:(UIImage *)doneImage {
+    _doneImage = doneImage;
+}
+
+- (void)setDeleteImage:(UIImage *)deleteImage {
+    _deleteImage = deleteImage;
 }
 
 - (void)setFilePath:(NSString *)filePath {
@@ -82,7 +95,7 @@
         }
         
         self.itemWidth = (LicensePlateScreenWidth-self.itemSpace*(self.rowCount+1))/self.rowCount-0.1;
-        self.itemHeight = self.itemWidth*4.0/3.0;
+        self.itemHeight = self.itemWidth*self.widthScale;
         self.rows = ([self.dataArray count] + (self.rowCount-1)) / self.rowCount;
     } else {
         NSLog(@" 解析json出错：%@", error.localizedDescription);

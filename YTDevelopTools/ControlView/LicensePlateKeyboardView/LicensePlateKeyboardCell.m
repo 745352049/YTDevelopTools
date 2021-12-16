@@ -26,6 +26,10 @@
     self.bgView.layer.cornerRadius = 6.0;
 }
 
+- (void)setConfig:(LicensePlateKeyboardConfig *)config {
+    _config = config;
+}
+
 - (void)setModel:(LicensePlateKeyboardModel *)model {
     _model = model;
     
@@ -42,11 +46,19 @@
     }
     
     if (model.isDelete == YES) {
-        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDel@2x" ofType:@"png"]];
+        if (self.config.deleteImage) {
+            self.deleteImageV.image = self.config.deleteImage;
+        } else {
+            self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDel@2x" ofType:@"png"]];
+        }
     }
     
     if (model.isDone == YES) {
-        self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDis@2x" ofType:@"png"]];
+        if (self.config.deleteImage) {
+            self.deleteImageV.image = self.config.doneImage;
+        } else {
+            self.deleteImageV.image = [UIImage imageNamed:[[NSBundle bundleWithURL:YTDevelopBundleURL] pathForResource:@"LicensePlateKeyboardDis@2x" ofType:@"png"]];
+        }
     }
 }
 
@@ -61,7 +73,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.font = [UIFont boldSystemFontOfSize:14.0];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:18.0];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
         _titleLabel.textColor = [UIColor blackColor];
     }

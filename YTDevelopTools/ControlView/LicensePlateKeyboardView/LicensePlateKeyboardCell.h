@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LicensePlateKeyboardCell : UICollectionViewCell
 
+@property (nonatomic,   copy) LicensePlateKeyboardConfig *config;
 @property (nonatomic,   copy) LicensePlateKeyboardModel *model;
 
 @end

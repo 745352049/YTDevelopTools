@@ -744,6 +744,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopTools.h\"";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -757,6 +758,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KTS2AWUZL8;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/YTDevelopTools/YTDevelopTools.h\"";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

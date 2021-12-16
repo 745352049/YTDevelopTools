@@ -162,7 +162,7 @@ Pod::Spec.new do |spec|
         # LicensePlateKeyboardView
         controlView.subspec 'LicensePlateKeyboardView' do |plateKeyboardView|
             plateKeyboardView.source_files = 'YTDevelopTools/ControlView/LicensePlateKeyboardView/*.{h,m}'
-            plateKeyboardView.frameworks = 'UIKit'
+            plateKeyboardView.frameworks = 'UIKit', 'AudioToolbox'
         end
 
     end

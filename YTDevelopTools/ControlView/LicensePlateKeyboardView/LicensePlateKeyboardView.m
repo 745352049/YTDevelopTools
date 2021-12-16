@@ -74,6 +74,7 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LicensePlateKeyboardCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LicensePlateKeyboardCell" forIndexPath:indexPath];
+    [cell setConfig:self.config];
     LicensePlateKeyboardModel *model = [self.config.dataArray objectAtIndex:indexPath.row];
     cell.model = model;
     
@@ -81,6 +82,7 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    AudioServicesPlaySystemSound(1519);
     LicensePlateKeyboardModel *model = [self.config.dataArray objectAtIndex:indexPath.row];
     if (model.isDelete == YES) {
         if (_keyboardViewClickBlock) {

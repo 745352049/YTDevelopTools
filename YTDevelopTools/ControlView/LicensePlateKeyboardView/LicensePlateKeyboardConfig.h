@@ -18,10 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)getPlateProvinceFilePath;
 
+@property (nonatomic, assign) CGFloat widthScale;
 @property (nonatomic, assign) CGFloat itemSpace;
 @property (nonatomic, assign) NSInteger rowCount;
 @property (nonatomic, assign) BOOL addDone;
 @property (nonatomic, assign) BOOL addDelete;
+@property (nonatomic, strong) UIImage *doneImage;
+@property (nonatomic, strong) UIImage *deleteImage;
 
 @property (nonatomic,   copy) NSString *filePath;
 
