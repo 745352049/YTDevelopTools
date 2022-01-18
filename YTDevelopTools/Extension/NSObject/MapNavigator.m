@@ -44,13 +44,17 @@
 ///
 
 + (void)AppleMapNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name {
+    [self AppleMapNavigatorWithLocation:location name:name mode:MKLaunchOptionsDirectionsModeDriving];
+}
+
++ (void)AppleMapNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode {
     /// 用户位置
     MKMapItem *startItem = [MKMapItem mapItemForCurrentLocation];
     /// 终点位置
     MKMapItem *endItem = [[MKMapItem alloc] initWithPlacemark:[[MKPlacemark alloc] initWithCoordinate:location addressDictionary:nil]];
-    endItem.name = name;
+    endItem.name = name.length ? name : @"";
     /// launchOptions
-    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving,
+    NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : mode,
                                     MKLaunchOptionsMapTypeKey : @(MKMapTypeStandard),
                                     MKLaunchOptionsShowsTrafficKey : @(YES)};
     
@@ -63,8 +67,12 @@
 
 ///
 
-+ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location {
-    [MapNavigator BaiDuNavigatorWithUrl:[NSString stringWithFormat:@"baidumap://map/direction?origin={{我的位置}}&destination=%f,%f&mode=%@&src=iOS", location.latitude, location.longitude, @"driving"]];
++ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name {
+    [self BaiDuNavigatorWithLocation:location name:name mode:@"driving" coordtype:@"bd09ll"];
+}
+
++ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode coordtype:(NSString *)coordtype {
+    [MapNavigator BaiDuNavigatorWithUrl:[NSString stringWithFormat:@"baidumap://map/direction?origin={{我的位置}}&destination=latlng:%f,%f|name:%@&mode=%@&coord_type=%@&src=iOS", location.latitude, location.longitude, name.length ? name : @"", mode, coordtype]];
 }
 
 + (void)BaiDuNavigatorWithUrl:(NSString *)url {
@@ -74,7 +82,11 @@
 ///
 
 + (void)GaoDeNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name {
-    [MapNavigator GaoDeNavigatorWithUrl:[NSString stringWithFormat:@"iosamap://path?sourceApplication=iOS&dlat=%f&dlon=%f&dname=%@&t=0", location.latitude, location.longitude, name]];
+    [self GaoDeNavigatorWithLocation:location name:name mode:@"0"];
+}
+
++ (void)GaoDeNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode {
+    [MapNavigator GaoDeNavigatorWithUrl:[NSString stringWithFormat:@"iosamap://path?sourceApplication=iOS&dlat=%f&dlon=%f&dname=%@&t=%@", location.latitude, location.longitude, name.length ? name : @"", mode]];
 }
 
 + (void)GaoDeNavigatorWithUrl:(NSString *)url {
@@ -84,7 +96,11 @@
 ///
 
 + (void)TengXunNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name {
-    [MapNavigator TengXunNavigatorWithUrl:[NSString stringWithFormat:@"qqmap://map/routeplan?from=%@&type=%@&tocoord=%f,%f&to=%@", @"我的位置", @"drive", location.latitude, location.longitude, name]];
+    [self TengXunNavigatorWithLocation:location name:name mode:@"drive"];
+}
+
++ (void)TengXunNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode {
+    [MapNavigator TengXunNavigatorWithUrl:[NSString stringWithFormat:@"qqmap://map/routeplan?from=%@&type=%@&tocoord=%f,%f&to=%@", @"我的位置", mode, location.latitude, location.longitude, name.length ? name : @""]];
 }
 
 + (void)TengXunNavigatorWithUrl:(NSString *)url {
@@ -94,7 +110,11 @@
 ///
 
 + (void)GoogleNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name {
-    [MapNavigator GoogleNavigatorWithUrl:[NSString stringWithFormat:@"comgooglemaps://?x-source=iOS&x-success=scheme&daddr=%f,%f&daddr=%@&directionsmode=%@", location.latitude, location.longitude, name, @"driving"]];
+    [self GoogleNavigatorWithLocation:location name:name mode:@"driving"];
+}
+
++ (void)GoogleNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode {
+    [MapNavigator GoogleNavigatorWithUrl:[NSString stringWithFormat:@"comgooglemaps://?x-source=iOS&x-success=scheme&daddr=%f,%f&daddr=%@&directionsmode=%@", location.latitude, location.longitude, name.length ? name : @"", mode]];
 }
 
 + (void)GoogleNavigatorWithUrl:(NSString *)url {

@@ -23,25 +23,35 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)AppleMapNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name;
 
++ (void)AppleMapNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode;
+
 + (void)AppleMapNavigatorWithStartItem:(MKMapItem *)startItem endItem:(MKMapItem *)endItem launchOptions:(nullable NSDictionary <NSString *, id> *)launchOptions;
 
 
-+ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location;
++ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name;
+
++ (void)BaiDuNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode coordtype:(NSString *)coordtype;
 
 + (void)BaiDuNavigatorWithUrl:(NSString *)url;
 
 
 + (void)GaoDeNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name;
 
++ (void)GaoDeNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode;
+
 + (void)GaoDeNavigatorWithUrl:(NSString *)url;
 
 
 + (void)TengXunNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name;
 
++ (void)TengXunNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode;
+
 + (void)TengXunNavigatorWithUrl:(NSString *)url;
 
 
 + (void)GoogleNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name;
+
++ (void)GoogleNavigatorWithLocation:(CLLocationCoordinate2D)location name:(NSString *)name mode:(NSString *)mode;
 
 + (void)GoogleNavigatorWithUrl:(NSString *)url;
 
