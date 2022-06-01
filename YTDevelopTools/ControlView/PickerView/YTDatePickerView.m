@@ -70,15 +70,19 @@
         _datePicker.frame = CGRectMake(0, YTTopViewHeight + 0.5, YTDatePicWidth, YTDatePicHeight);
         // 设置该UIDatePicker的国际化Locale，以简体中文习惯显示日期，UIDatePicker控件默认使用iOS系统的国际化Locale
         _datePicker.locale = [[NSLocale alloc]initWithLocaleIdentifier:@"zh_CHS_CN"];
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setLocale:[NSLocale currentLocale]];
+        [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+        dateFormatter.locale = [NSLocale systemLocale];
+        [dateFormatter setCalendar:[NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian]];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
         // 设置时间范围
         if (_minDateStr != nil && _minDateStr.length > 0) {
-            NSDate *minDate = [formatter dateFromString:_minDateStr];
+            NSDate *minDate = [dateFormatter dateFromString:_minDateStr];
             _datePicker.minimumDate = minDate;
         }
         if (_maxDateStr != nil && _maxDateStr.length > 0) {
-            NSDate *maxDate = [formatter dateFromString:_maxDateStr];
+            NSDate *maxDate = [dateFormatter dateFromString:_maxDateStr];
             _datePicker.maximumDate = maxDate;
         }
         // 把当前时间赋值给 _datePicker
@@ -172,6 +176,11 @@
 
 - (NSString *)toStringWithDate:(NSDate *)date {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    dateFormatter.locale = [NSLocale systemLocale];
+    [dateFormatter setCalendar:[NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian]];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     switch (_datePickerMode) {
         case UIDatePickerModeTime:
             [dateFormatter setDateFormat:@"HH:mm"];
@@ -197,6 +206,11 @@
 
 - (NSDate *)toDateWithDateString:(NSString *)dateString {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[NSLocale currentLocale]];
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    dateFormatter.locale = [NSLocale systemLocale];
+    [dateFormatter setCalendar:[NSCalendar calendarWithIdentifier:NSCalendarIdentifierGregorian]];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     switch (_datePickerMode) {
         case UIDatePickerModeTime:
             [dateFormatter setDateFormat:@"HH:mm"];

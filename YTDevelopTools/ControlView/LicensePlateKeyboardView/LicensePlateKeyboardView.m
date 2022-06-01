@@ -82,9 +82,9 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    AudioServicesPlaySystemSound(1519);
     LicensePlateKeyboardModel *model = [self.config.dataArray objectAtIndex:indexPath.row];
     if (model.isDelete == YES) {
+        AudioServicesPlaySystemSound(1519);
         if (_keyboardViewClickBlock) {
             self.keyboardViewClickBlock(self, YES, NO, @"");
         }
@@ -92,12 +92,14 @@ return [[UIApplication sharedApplication] statusBarFrame].size.height;\
     }
     
     if (model.isDone == YES) {
+        AudioServicesPlaySystemSound(1519);
         if (_keyboardViewClickBlock) {
             self.keyboardViewClickBlock(self, NO, YES, @"");
         }
         return;
     }
     if (model.enable == YES) {
+        AudioServicesPlaySystemSound(1519);
         if (_keyboardViewClickBlock) {
             self.keyboardViewClickBlock(self, NO, NO, model.name);
         }
