@@ -79,14 +79,21 @@
         // 设置时间范围
         if (_minDateStr != nil && _minDateStr.length > 0) {
             NSDate *minDate = [dateFormatter dateFromString:_minDateStr];
-            _datePicker.minimumDate = minDate;
+            if (minDate) {
+                _datePicker.minimumDate = minDate;
+            }
         }
         if (_maxDateStr != nil && _maxDateStr.length > 0) {
             NSDate *maxDate = [dateFormatter dateFromString:_maxDateStr];
-            _datePicker.maximumDate = maxDate;
+            if (maxDate) {
+                _datePicker.maximumDate = maxDate;
+            }
         }
-        // 把当前时间赋值给 _datePicker
-        [_datePicker setDate:[self toDateWithDateString:_selectValue] animated:YES];
+        NSDate *crrentDate = [self toDateWithDateString:_selectValue];
+        if (crrentDate) {
+            // 把当前时间赋值给 _datePicker
+            [_datePicker setDate:crrentDate animated:YES];
+        }
         // 滚动改变值的响应事件
         [_datePicker addTarget:self action:@selector(didSelectValueChanged:) forControlEvents:UIControlEventValueChanged];
     }
@@ -96,10 +103,12 @@
 #pragma mark - 时间选择器的滚动响应事件
 
 - (void)didSelectValueChanged:(UIDatePicker *)sender {
-    _selectValue = [self toStringWithDate:sender.date];
-    if (_isAutoSelect) {
-        if (_resultBlock) {
-            _resultBlock(self.datePicker, _selectValue);
+    if (sender.date) {
+        _selectValue = [self toStringWithDate:sender.date];
+        if (_isAutoSelect) {
+            if (_resultBlock) {
+                _resultBlock(self.datePicker, _selectValue);
+            }
         }
     }
 }
