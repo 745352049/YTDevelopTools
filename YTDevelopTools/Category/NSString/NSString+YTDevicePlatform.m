@@ -56,6 +56,11 @@
     if ([platform isEqualToString:@"iPhone14,5"]) return @"iPhone 13";
     if ([platform isEqualToString:@"iPhone14,2"]) return @"iPhone 13 Pro";
     if ([platform isEqualToString:@"iPhone14,3"]) return @"iPhone 13 Pro Max";
+    if ([platform isEqualToString:@"iPhone14,6"]) return @"iPhone SE 3nd";
+    if ([platform isEqualToString:@"iPhone14,7"]) return @"iPhone 14";
+    if ([platform isEqualToString:@"iPhone14,8"]) return @"iPhone 14 Plus";
+    if ([platform isEqualToString:@"iPhone15,2"]) return @"iPhone 14 Pro";
+    if ([platform isEqualToString:@"iPhone15,3"]) return @"iPhone 14 Pro Max";
     
     /// HomePod
     if ([platform isEqualToString:@"AudioAccessory1,1"]) return @"HomePod";
@@ -95,6 +100,8 @@
     if ([platform isEqualToString:@"iPad11,4"]) return @"iPad Air 3rd";
     if ([platform isEqualToString:@"iPad13,1"]) return @"iPad Air 4th";
     if ([platform isEqualToString:@"iPad13,2"]) return @"iPad Air 4th";
+    if ([platform isEqualToString:@"iPad13,16"]) return @"iPad Air 5th";
+    if ([platform isEqualToString:@"iPad13,17"]) return @"iPad Air 5th";
     
     /// iPad Pro
     if ([platform isEqualToString:@"iPad6,7"]) return @"iPad Pro (12.9-inch)";
