@@ -16,6 +16,7 @@
 #import <YTDevelopTools/YTDatePickerView.h>
 #import <YTDevelopTools/YTSinglePickerView.h>
 #import <YTDevelopTools/LicensePlateKeyboardView.h>
+#import <YTDevelopTools/CarNumberKeyboardView.h>
 
 #else
 
@@ -28,6 +29,7 @@
 #import "YTDatePickerView.h"
 #import "YTSinglePickerView.h"
 #import "LicensePlateKeyboardView.h"
+#import "CarNumberKeyboardView.h"
 
 #endif
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.4.8"
+    spec.version      = "1.4.9"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
         # UIImage
         category.subspec 'UIImage' do |image|
             image.source_files = 'YTDevelopTools/Category/UIImage/*.{h,m}'
-            image.frameworks = 'UIKit'
+            image.frameworks = 'UIKit', 'Photos'
         end
         
         # NSBundle

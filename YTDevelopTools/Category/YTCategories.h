@@ -12,6 +12,7 @@
 #import <YTDevelopTools/UIImage+YTWaterMark.h>
 #import <YTDevelopTools/UIImage+YTQRCode.h>
 #import <YTDevelopTools/UIImage+YTScale.h>
+#import <YTDevelopTools/UIImage+YTCapture.h>
 
 #import <YTDevelopTools/UILabel+YTFastLabel.h>
 
@@ -27,6 +28,7 @@
 #import <YTDevelopTools/NSString+YTMD5Encrypt.h>
 
 #import <YTDevelopTools/NSDateFormatter+YTFormatter.h>
+#import <YTDevelopTools/NSDate+YTDate.h.h>
 
 #import <YTDevelopTools/NSObject+YTRandom.h>
 
@@ -40,6 +42,7 @@
 #import "UIImage+YTWaterMark.h"
 #import "UIImage+YTQRCode.h"
 #import "UIImage+YTScale.h"
+#import "UIImage+YTCapture.h"
 
 #import "UILabel+YTFastLabel.h"
 
@@ -55,6 +58,7 @@
 #import "NSString+YTMD5Encrypt.h"
 
 #import "NSDateFormatter+YTFormatter.h"
+#import "NSDate+YTDate.h"
 
 #import "NSObject+YTRandom.h"
 

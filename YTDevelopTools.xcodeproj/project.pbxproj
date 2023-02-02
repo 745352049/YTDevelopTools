@@ -14,6 +14,8 @@
 		04DBBBE6298B5E9E001F03C4 /* CarNumberKeyboardConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBBE0298B5E9E001F03C4 /* CarNumberKeyboardConfig.m */; };
 		04DBBBE7298B5E9E001F03C4 /* CarNumberKeyboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBBE2298B5E9E001F03C4 /* CarNumberKeyboardCell.m */; };
 		04DBBBE8298B5E9E001F03C4 /* CarNumberKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBBE4298B5E9E001F03C4 /* CarNumberKeyboardView.m */; };
+		04DBBBEB298B8EA1001F03C4 /* NSDate+YTDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBBEA298B8EA1001F03C4 /* NSDate+YTDate.m */; };
+		04DBBBF1298B922E001F03C4 /* UIImage+YTCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DBBBF0298B922E001F03C4 /* UIImage+YTCapture.m */; };
 		7A4B962B246E67A8002FBE60 /* UIImage+YTWaterMark.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */; };
 		7A5945D7247236B000E3EAC3 /* NSBundle+YTBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */; };
 		7A839C542473F86000AC49ED /* YTKeyBoardTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A839C502473F86000AC49ED /* YTKeyBoardTextField.m */; };
@@ -84,6 +86,10 @@
 		04DBBBE3298B5E9E001F03C4 /* CarNumberKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarNumberKeyboardView.h; sourceTree = "<group>"; };
 		04DBBBE4298B5E9E001F03C4 /* CarNumberKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarNumberKeyboardView.m; sourceTree = "<group>"; };
 		04DBBBE5298B5E9E001F03C4 /* CarNumberKeyboardConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarNumberKeyboardConfig.h; sourceTree = "<group>"; };
+		04DBBBE9298B8EA1001F03C4 /* NSDate+YTDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+YTDate.h"; sourceTree = "<group>"; };
+		04DBBBEA298B8EA1001F03C4 /* NSDate+YTDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+YTDate.m"; sourceTree = "<group>"; };
+		04DBBBEF298B922E001F03C4 /* UIImage+YTCapture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTCapture.h"; sourceTree = "<group>"; };
+		04DBBBF0298B922E001F03C4 /* UIImage+YTCapture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTCapture.m"; sourceTree = "<group>"; };
 		7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YTWaterMark.h"; sourceTree = "<group>"; };
 		7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YTWaterMark.m"; sourceTree = "<group>"; };
 		7A5945D5247236B000E3EAC3 /* NSBundle+YTBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YTBundle.m"; sourceTree = "<group>"; };
@@ -357,6 +363,8 @@
 		BE0CB18C26A16D9E0085F815 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
+				04DBBBE9298B8EA1001F03C4 /* NSDate+YTDate.h */,
+				04DBBBEA298B8EA1001F03C4 /* NSDate+YTDate.m */,
 				BE0CB18D26A16DAF0085F815 /* NSDateFormatter+YTFormatter.h */,
 				BE0CB18E26A16DAF0085F815 /* NSDateFormatter+YTFormatter.m */,
 			);
@@ -474,6 +482,8 @@
 				BE25D41326A7CE1900FF0C34 /* UIImage+YTQRCode.m */,
 				7A4B9629246E67A8002FBE60 /* UIImage+YTWaterMark.h */,
 				7A4B962A246E67A8002FBE60 /* UIImage+YTWaterMark.m */,
+				04DBBBEF298B922E001F03C4 /* UIImage+YTCapture.h */,
+				04DBBBF0298B922E001F03C4 /* UIImage+YTCapture.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -572,7 +582,7 @@
 		7AA45B4A246D061A002D9801 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					7AA45B51246D061A002D9801 = {
@@ -604,6 +614,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE122A2B26C51F71003C65EA /* UIColor+YTColor.m in Sources */,
+				04DBBBF1298B922E001F03C4 /* UIImage+YTCapture.m in Sources */,
 				BEF63702272AE6390093F898 /* YTHorizontalCollectionViewFlowLayout.m in Sources */,
 				BEF636FF272AE6390093F898 /* LicensePlateKeyboardView.m in Sources */,
 				D53852B424A1B6830058827F /* YTPermissionContacts.m in Sources */,
@@ -624,6 +635,7 @@
 				BE25D41526A7CE1900FF0C34 /* UIImage+YTQRCode.m in Sources */,
 				D538528324A1A6870058827F /* UIColor+YTAdapter.m in Sources */,
 				04099D2F2762FFB3009EAFC3 /* NSString+YTCheck.m in Sources */,
+				04DBBBEB298B8EA1001F03C4 /* NSDate+YTDate.m in Sources */,
 				04DBBBE6298B5E9E001F03C4 /* CarNumberKeyboardConfig.m in Sources */,
 				BE25D40626A18F2600FF0C34 /* YTSinglePickerView.m in Sources */,
 				BE25D42026BA311600FF0C34 /* NSString+YTDevicePlatform.m in Sources */,

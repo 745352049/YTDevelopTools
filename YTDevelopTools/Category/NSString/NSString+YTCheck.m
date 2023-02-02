@@ -6,11 +6,16 @@
 
 @implementation NSString (YTCheck)
 
-- (NSString *)Safe_substringWithRange:(NSRange)range {
+- (NSString *)safe_substringWithRange:(NSRange)range {
     if ((range.location + range.length) <= self.length) {
         return [self substringWithRange:range];
     }
     return nil;
+}
+
+- (BOOL)safe_containsString:(NSString *)string {
+    if (string.length <= 0) return NO;
+    return [self containsString:string];
 }
 
 - (NSArray<NSString *> *)safe_componentsSeparatedByString:(NSString *)separator {
