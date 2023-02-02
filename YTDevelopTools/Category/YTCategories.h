@@ -28,7 +28,7 @@
 #import <YTDevelopTools/NSString+YTMD5Encrypt.h>
 
 #import <YTDevelopTools/NSDateFormatter+YTFormatter.h>
-#import <YTDevelopTools/NSDate+YTDate.h.h>
+#import <YTDevelopTools/NSDate+YTDate.h>
 
 #import <YTDevelopTools/NSObject+YTRandom.h>
 
