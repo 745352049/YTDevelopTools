@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = "YTDevelopTools"
-    spec.version      = "1.4.7"
+    spec.version      = "1.4.8"
     spec.summary      = "YTDevelopTools 开发工具类"
     spec.homepage     = "https://github.com/745352049/YTDevelopTools"
     spec.author       = { "Augentstern" => "745352049@qq.com" }
@@ -127,6 +127,12 @@ Pod::Spec.new do |spec|
         controlView.subspec 'KeyBoardTextField' do |keyBoardTextField|
             keyBoardTextField.source_files = 'YTDevelopTools/ControlView/KeyBoardTextField/*.{h,m}'
             keyBoardTextField.frameworks = 'UIKit'
+        end
+        
+        # CarNumberKeyboardView
+        controlView.subspec 'CarNumberKeyboardView' do |carNumberKeyboardView|
+            carNumberKeyboardView.source_files = 'YTDevelopTools/ControlView/CarNumberKeyboardView/*.{h,m}'
+            carNumberKeyboardView.frameworks = 'UIKit'
         end
         
         # AssistiveTouchView
